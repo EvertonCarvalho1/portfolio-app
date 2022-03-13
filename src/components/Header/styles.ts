@@ -1,12 +1,20 @@
 import styled from "styled-components";
 
 export const ContainerHeader = styled.header`
-
+    
+    width: 100%;
+    max-width: 1156px;
+    padding:18px;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:18px;
     border-bottom:1px solid #26292D;
+    background: #171718;
 
     a{
    

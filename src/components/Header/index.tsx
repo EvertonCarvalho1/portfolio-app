@@ -5,7 +5,7 @@ const Header: React.FC = () => {
     return (
         <ContainerHeader>
             <a href="#">
-                <h1>{`<EvertonDev/>`}</h1>
+                <h1>{`<E.Dev/>`}</h1>
             </a>
             <nav>
                 <a className="aNav" href="">Sobre mim</a>
