@@ -15,6 +15,7 @@ export const ContainerHeader = styled.header`
     align-items: center;
     border-bottom:1px solid #26292D;
     background: #171718;
+    z-index: 999;
 
     a{
    
