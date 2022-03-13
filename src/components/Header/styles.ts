@@ -12,16 +12,16 @@ export const ContainerHeader = styled.header`
    
         text-decoration: none;
         h1{
+            letter-spacing: -0.5px;
             font-size: 24px;
             color: #FFB400;
-            font-weight:500;
+            font-weight:700;
           
         }
     }
 
     nav{
         .aNav{
-    
             height: 19px;
             position: relative;
             font-size: 16px;
