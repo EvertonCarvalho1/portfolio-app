@@ -3,7 +3,7 @@ import Header from "../../components/Header";
 import { Container } from "./styles";
 
 
-const Dashboard: React.FC = () => {
+const Home: React.FC = () => {
     return (
     <Container>
         <Header/>
@@ -11,4 +11,4 @@ const Dashboard: React.FC = () => {
     )
 };
 
-export default Dashboard;
+export default Home;

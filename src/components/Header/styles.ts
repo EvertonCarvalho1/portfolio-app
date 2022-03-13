@@ -20,8 +20,6 @@ export const ContainerHeader = styled.header`
     }
 
     nav{
-
-
         .aNav{
     
             height: 19px;
