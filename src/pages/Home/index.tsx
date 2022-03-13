@@ -6,10 +6,10 @@ import DownloadIcon  from '@mui/icons-material/Download';
 const Home: React.FC = () => {
     return (
         <Container>
-            <div>
+            <div className="homeTextContainer">
                 <h1>Olá, sou <span>Everton Carvalho.</span></h1>
-                <h1>Desenvolvedor Front-end</h1>
-                <h3>Este é meu portfolio!</h3>
+                <h1 className="lineTypeWriter animTypeWriter">Desenvolvedor Front-end</h1>
+                <h3>Bem vindo ao meu portfolio!</h3>
             </div>
             <div className="buttonContainer">
                 <button className="buttonSeeProjects">Ver Projetos</button>

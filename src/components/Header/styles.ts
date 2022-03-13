@@ -16,6 +16,10 @@ export const ContainerHeader = styled.header`
             font-size: 24px;
             color: #FFB400;
             font-weight:700;
+            transition: 0.3s;
+            &:hover{
+                text-shadow: 0px 0px 16px #FFB400;
+            }
           
         }
     }
