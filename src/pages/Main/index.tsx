@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../../components/Header";
 import AboutMe from "../AboutMe";
 import Home from "../Home";
+import MySkils from "../MySkils";
 import { Container } from "./styles";
 
 const Main: React.FC = () => {
@@ -11,6 +12,7 @@ const Main: React.FC = () => {
                 <Header />
                 <Home />
                 <AboutMe />
+                <MySkils />
             </Container>
         </>
     )
