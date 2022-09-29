@@ -4,12 +4,20 @@ export const Container = styled.section`
     width: 100%;
     max-width: 960px;
     margin: 50px auto;
+
+    h1{
+            font-size: 48px;
+            line-height: 57px;
+            font-weight: 500;
+            color: #FFF;
+            text-align: center;
+            margin-bottom: 20px;
+    }
     .slick-track{
         display: flex;
     }
 
     .slick-slider{
-
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -39,8 +47,8 @@ export const Container = styled.section`
             border: none;
             cursor: pointer;
                 img{
-                    width: 150px;
-                    height: 150px;
+                    width: 170px;
+                    height: 170px;
                     border-radius: 50%;
                 }
         }

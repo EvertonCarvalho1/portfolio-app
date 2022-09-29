@@ -9,7 +9,6 @@ export const Container = styled.div`
     margin: 150px 200px ;
     text-align: center;
 
-
     .homeTextContainer{
         display: flex;
         flex-direction: column;
@@ -68,9 +67,7 @@ export const Container = styled.div`
                 text-align: center;
                 color: #FFF;
             }
-
     }
-   
 
     .buttonContainer{
         width: 100%;

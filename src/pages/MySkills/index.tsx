@@ -16,8 +16,8 @@ const MySkills: React.FC = () => {
     const settings = {
         infinite: true,
         autoplay: true,
-        speed: 200,
-        autoplaySpeed: 3000,
+        speed: 400,
+        autoplaySpeed: 4000,
         cssEase: "linear",
         dots: false,
         slidesToShow: 4,
@@ -62,6 +62,7 @@ const MySkills: React.FC = () => {
 
     return (
         <Container>
+            <h1>Linguagens e ferramentas</h1>
             <Slider {...settings}>
                 {logos.map((item, index) => {
                     return (
