@@ -2,17 +2,36 @@ import styled from "styled-components";
 
 export const Container = styled.section`
     width: 100%;
+    height: 400px;
     max-width: 960px;
     margin: 50px auto;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     h1{
             font-size: 48px;
             line-height: 57px;
-            font-weight: 500;
+            font-weight: 600;
             color: #FFF;
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 60px;
     }
+
+    //.slick-next:before, .slick-prev:before
+
+    .slick-next:before{
+        color: #FFF;
+        font-size: 40px;
+        margin-left: 20px;
+    }
+
+    .slick-prev:before{
+        color: #FFF;
+        font-size: 40px;
+        margin-right: 20px;
+    }
+
+
     .slick-track{
         display: flex;
     }
@@ -50,6 +69,7 @@ export const Container = styled.section`
                     width: 170px;
                     height: 170px;
                     border-radius: 50%;
+                    margin-left: 40px;
                 }
         }
     }

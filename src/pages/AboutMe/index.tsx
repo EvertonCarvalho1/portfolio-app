@@ -4,6 +4,7 @@ import evertonImg from '../../assets/Everton.svg';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import MySkills from "../MySkills";
 
 const AboutMe: React.FC = () => {
     return (
@@ -13,7 +14,10 @@ const AboutMe: React.FC = () => {
 
                 <div className="aboutMecontainer">
 
-                    <img src={evertonImg} alt="Everton Dev" />
+                    <div className="imgContainer">
+                        <img src={evertonImg} alt="Everton Dev" />
+
+                    </div>
 
                     <div className="aboutMeDescription">
                         <h1>Sobre mim</h1>
@@ -24,13 +28,14 @@ const AboutMe: React.FC = () => {
                         <p>
                             Adoro aprender coisas novas, trabalhar em equipe e resolver problemas. Facilitar a vida das pessoas com o meu trabalho é o que me motiva.
                         </p>
-                        <div className="socialMedia">
-                            <a href=""><GitHubIcon /></a>
-                            <a href=""><LinkedInIcon /></a>
-                            <a href=""><InstagramIcon /></a>
-                            <span>Me siga!</span>
-                        </div>
 
+
+                    </div>
+
+                    <div className="socialMedia">
+                        <a className="rotate" href=""><GitHubIcon /></a>
+                        <a className="rotate" href=""><LinkedInIcon /></a>
+                        <a className="rotate" href=""><InstagramIcon /></a>
                     </div>
                 </div>
             </Container>

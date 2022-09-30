@@ -1,9 +1,19 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    width: 100%;
-    max-width: 1156px;
-    margin: 0 auto;
-    height: 100%;
     overflow: hidden;
+
+    .aboutMe0{
+        width: 100% !important;
+        height: 800px;
+        background-color: #0f0f0f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutMe{
+        width: 100% !important;
+        margin: 0 auto;
+        max-width: 1156px;
+    }
 `;

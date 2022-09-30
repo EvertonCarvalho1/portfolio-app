@@ -6,8 +6,12 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     align-items: center;
-    margin: 225px 100px ;
+    margin: 225px auto ;
     text-align: center;
+    width: 100%;
+    max-width: 1156px;
+    height: 450px;
+
 
     .homeTextContainer{
         display: flex;
@@ -17,7 +21,7 @@ export const Container = styled.div`
         color: #FFF;
             h1{
                 font-size: 60px;
-                font-weight: 600;
+                font-weight: 400;
                 text-align: center;
                 span{
                     color: #FFB400;

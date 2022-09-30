@@ -4,6 +4,9 @@ export const ContainerHeader = styled.header`
      border-bottom:1px solid #171718;
      width: 100%;
      height: 131px;
+     position: fixed;
+     background: #000000;
+     z-index: 999;
 
     .container{
         width: 100%;
@@ -11,16 +14,12 @@ export const ContainerHeader = styled.header`
         height: 130px;
         padding:18px;
         margin: 0 auto;
-        position: fixed;
         top: 0;
         left: 0;
         right: 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
-       
-        background: #000000;
-        z-index: 999;
     }
 
     a{
