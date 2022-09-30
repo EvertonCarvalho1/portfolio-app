@@ -1,19 +1,19 @@
 import React from "react";
 import { Container } from "./styles";
 import evertonImg from '../../assets/Everton.svg';
-import GitHubIcon  from '@mui/icons-material/GitHub';
-import LinkedInIcon  from '@mui/icons-material/LinkedIn';
-import InstagramIcon  from '@mui/icons-material/Instagram';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 const AboutMe: React.FC = () => {
     return (
         <>
             <Container>
-                
+
 
                 <div className="aboutMecontainer">
 
-                    <img src={evertonImg} alt="Everton Dev" /> 
+                    <img src={evertonImg} alt="Everton Dev" />
 
                     <div className="aboutMeDescription">
                         <h1>Sobre mim</h1>
@@ -30,8 +30,8 @@ const AboutMe: React.FC = () => {
                             <a href=""><InstagramIcon /></a>
                             <span>Me siga!</span>
                         </div>
-                    
-                    </div> 
+
+                    </div>
                 </div>
             </Container>
         </>

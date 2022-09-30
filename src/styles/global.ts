@@ -8,10 +8,11 @@ export default createGlobalStyle`
     margin: 0;
     outline: 0;
     padding: 0;
+    letter-spacing: 1px;
 }
 
 body{
-    background: #171718;
+    background: #000000;
     -webkit-font-smoothing: antialiased;
 }
 

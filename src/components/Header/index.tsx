@@ -4,18 +4,18 @@ import { ContainerHeader } from "./styles";
 const Header: React.FC = () => {
     return (
         <ContainerHeader>
-            <a href="#">
-                <h1>{`<Meu_Portifolio/>`}</h1>
-            </a>
-            <nav>
-                <a className="aNav" href="">Sobre mim</a>
-                <a className="aNav" href="">Minhas Skills</a>
-                <a className="aNav" href="">Projetos</a>
-                <a className="aNav" href="">Contato</a>
-            </nav>
-           
+            <div className="container">
+                <a href="#">
+                    <h1>{``}</h1>
+                </a>
+                <nav>
+                    <a className="aNav" href="">Sobre mim</a>
+                    <a className="aNav" href="">Minhas Skills</a>
+                    <a className="aNav" href="">Projetos</a>
+                    <a className="aNav" href="">Contato</a>
+                </nav>
+            </div>
         </ContainerHeader>
-     
     )
 }
 

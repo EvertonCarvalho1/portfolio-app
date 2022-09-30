@@ -1,24 +1,31 @@
 import React from "react";
 import { Container } from "./styles";
 import downloadImg from '../../assets/download.svg';
-import DownloadIcon  from '@mui/icons-material/Download';
+import DownloadIcon from '@mui/icons-material/Download';
 
 const Home: React.FC = () => {
     return (
         <Container>
             <div className="homeTextContainer">
-                <h1>Olá, sou <span>Everton Carvalho.</span></h1>
-                <h1 className="lineTypeWriter animTypeWriter">Desenvolvedor Front-end</h1>
-                <h3>Bem vindo ao meu portfolio!</h3>
+                <h1>Olá, Me chamo <span>Everton!</span></h1>
+                <div className="homeDescription">
+                    <h1 >Um desenvolvedor curioso, que está <br />sempre procurando aprender mais.</h1>
+
+
+                </div >
             </div>
-            <div className="buttonContainer">
-                <button className="buttonSeeProjects">Ver Projetos</button>
-                <button 
-                className="buttonDownload"
-                >
-                    <DownloadIcon/>
-                    Baixar Currículo
-                </button>
+
+            <div className="welcomeText">
+                <h1 >Bem vindo ao meu portfolio!</h1>
+            </div>
+
+            <div className="container">
+                <div className="animated-border"></div>
+                <div className="corner">
+
+                    <button className="buttonSeeProjects">Ver Projetos</button>
+
+                </div>
             </div>
         </Container>
     )

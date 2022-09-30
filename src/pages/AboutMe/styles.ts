@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    margin: 0 94.5px;
+    margin: 0px 94.5px 200px;
     background: #1C1E22;
+    
     border: 1.5px solid #26292D;
     border-radius: 8px;
 
     .aboutMecontainer{
-  
         display: flex;
         padding: 24px;
         height: 453px;
@@ -29,7 +29,6 @@ export const Container = styled.div`
             margin: 32px 0 15px;
             font-size: 16px;
             line-height: 28px;
-            letter-spacing: 0.44px;
             color: #FFF;
             & + p{
                 margin: 0 0 32px;
