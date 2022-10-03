@@ -12,28 +12,27 @@ export const Container = styled.div`
     .aboutMecontainer{
         display: flex;
         padding: 24px;
-        height: 453px;
-        position: relative;
         .imgContainer{
-            margin-right: 30px;
+            width: 326px;
+            height: 405px;
             -webkit-box-shadow: 15px 13px 13px 0px rgba(0,0,0,0.75);
             -moz-box-shadow: 15px 13px 13px 0px rgba(0,0,0,0.75);
             box-shadow: 15px 13px 13px 0px rgba(0,0,0,0.75);
             border-radius: 8px !important;
             img{
+                width: 326px;
                 border-radius: 8px !important;
                 z-index: 99999;
             }
         }
    
     .aboutMeDescription{
-        padding: 0px 200px 0px 0px;
         margin-left: 30px;
         h1{
             font-size: 35px;
             line-height: 57px;
             font-weight: 700;
-            color: #FFF;
+            color: #FFB400;
         }
 
         p{
@@ -53,11 +52,8 @@ export const Container = styled.div`
             display: flex;
             align-items: center;
             transform: rotate(-90deg);
-            position: absolute;
-            top: 230px;
-            left: 950px;
             a{
-                margin-bottom: -50px;
+                margin-bottom: -125px;
                 transform: rotate(-270deg);
                 text-decoration: none;
                 color: #FFB400;     
