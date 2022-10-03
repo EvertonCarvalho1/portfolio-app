@@ -4,7 +4,7 @@ export const Container = styled.div`
     overflow: hidden;
 
     .aboutMe0{
-        width: 100% !important;
+        width: 100% ;
         height: 800px;
         background-color: #0f0f0f;
         display: flex;
@@ -12,7 +12,7 @@ export const Container = styled.div`
         align-items: center;
     }
     .aboutMe{
-        width: 100% !important;
+        width: 100%;
         margin: 0 auto;
         max-width: 1156px;
     }

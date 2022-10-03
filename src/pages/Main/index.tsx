@@ -34,7 +34,6 @@ const Main: React.FC = () => {
                 </div>
 
                 <div className="aboutMe0">
-
                     <div
                         className="aboutMe"
                         data-aos='fade-right'

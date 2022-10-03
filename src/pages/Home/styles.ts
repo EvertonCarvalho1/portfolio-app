@@ -25,48 +25,15 @@ export const Container = styled.div`
                 text-align: center;
                 span{
                     color: #FFB400;
-                    margin-bottom: 16px;
                 }
             }
             .homeDescription{
                 margin: 16px 16px 0px;
                 h1{
                     line-height: 2.2rem;
-                    font-family: "Roboto", serif;
+                    font-family: "Montserrat", serif;
                     font-size: 20px;
                     font-weight: normal;
-                }
-            }
-            .lineTypeWriter{
-                border-right: 2px solid #FFF;
-                text-align: center;
-                white-space: nowrap;
-                overflow: hidden; transform: translateY(-20%);
-            }
-
-            .animTypeWriter{
-                animation: typewriter 4s steps(40) 1s 1 normal both,
-                blinkTextCursor 500ms steps(40) infinite normal;
-                color: transparent;
-                border: 2px solid #FFF;
-            
-            }
-
-            @keyframes typewriter {
-                from{
-                    width: 0;
-                }
-                to{
-                    width: 100%;
-                }
-            }
-
-            @keyframes blinkTextCursor {
-                from{
-                    border-right-color:  #FFF;
-                }
-                to{
-                    border-right-color:  transparent;
                 }
             }
 
@@ -81,7 +48,7 @@ export const Container = styled.div`
     .welcomeText{
         h1{
             line-height: 2.2rem;
-            font-family: "Roboto", serif;
+            font-family: "Montserrat", Sans-serif;;
             font-size: 20px;
             color: #FFB400;
             font-weight: normal;
@@ -98,11 +65,11 @@ export const Container = styled.div`
             background: #FFB400;
             color: #000000;
             transition:  0.3s;
-            font-weight: bold;
+            font-weight: 500;
+            font-size: 16px;
             &:hover{
                 background: #ba8400;
-                color: #FFF;
-                
+                color: #FFF; 
             }
         }
           width: 182px;
@@ -134,7 +101,6 @@ export const Container = styled.div`
             transform: rotate(360deg);
           }
         }
-
 `;
 
 

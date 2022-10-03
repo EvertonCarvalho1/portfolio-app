@@ -1,48 +1,48 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    //margin: 0px 94.5px 200px;
+    padding: 20px 0px 20px 0px;
+    margin: 0 auto;
     background: #0a0a0c;
     border-radius: 8px;
-    margin: 0 auto;
     -webkit-box-shadow: 15px 13px 13px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 15px 13px 13px 0px rgba(0,0,0,0.75);
     box-shadow: 15px 13px 13px 0px rgba(0,0,0,0.75);
-    //width: 300px;
+
     .aboutMecontainer{
         display: flex;
         padding: 24px;
         height: 453px;
         position: relative;
-       
-
         .imgContainer{
             margin-right: 30px;
+            -webkit-box-shadow: 15px 13px 13px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 15px 13px 13px 0px rgba(0,0,0,0.75);
+            box-shadow: 15px 13px 13px 0px rgba(0,0,0,0.75);
+            border-radius: 8px !important;
             img{
-                border-radius: 8px;
+                border-radius: 8px !important;
+                z-index: 99999;
             }
-
         }
    
-
     .aboutMeDescription{
         padding: 0px 200px 0px 0px;
         margin-left: 30px;
         h1{
-            font-size: 48px;
+            font-size: 35px;
             line-height: 57px;
-            font-weight: 600;
+            font-weight: 700;
             color: #FFF;
-            letter-spacing: 2px;
         }
 
         p{
             margin: 40px 0 15px;
-            font-size: 17px;
-            color: #FFF;
             line-height: 2.2rem;
-            font-family: "Roboto", serif;
+            font-family: "Montserrat", Sans-serif;;
             font-weight: normal;
+            font-size: 16px;
+            color: #FFF;
             & + p{
                 margin: 0 0 32px;
             }
@@ -78,8 +78,5 @@ export const Container = styled.div`
             }
 
         }  
-        
-        
     }
-
 `;

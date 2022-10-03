@@ -17,7 +17,7 @@ body{
 }
 
 body, input, button{
-    font: 16px 'Roboto', sans-serif;
+    font: 16px "Montserrat", Sans-serif;;
 }
 button{
     cursor: pointer;
