@@ -17,7 +17,7 @@ body{
 }
 
 body, input, button{
-    font: 16px "Montserrat", Sans-serif;;
+    font: 16px "Montserrat", sans-serif;
 }
 button{
     cursor: pointer;
