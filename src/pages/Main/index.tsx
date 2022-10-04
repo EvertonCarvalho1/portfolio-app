@@ -24,6 +24,7 @@ const Main: React.FC = () => {
             <Header />
             <Container>
                 <div
+                    id="home"
                     data-aos='fade-right'
                     data-aos-offset="500"
                     data-aos-easing="ease-in-sine"
@@ -36,6 +37,7 @@ const Main: React.FC = () => {
 
                 <div className="aboutMe0">
                     <div
+                        id="aboutMe"
                         className="aboutMe"
                         data-aos='fade-right'
                         data-aos-anchor=".aboutMe0"
@@ -52,6 +54,7 @@ const Main: React.FC = () => {
                     className="mySkills0"
                 >
                     <div
+                        id="mySkills"
                         className="mySkills"
                         data-aos='fade-right'
                         data-aos-anchor=".mySkills"

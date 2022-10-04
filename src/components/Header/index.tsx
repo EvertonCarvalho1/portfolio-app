@@ -2,19 +2,23 @@ import React from "react";
 import { ContainerHeader } from "./styles";
 
 import logoImg from '../../assets/logo.png';
+import { Link } from 'react-scroll'
 
 const Header: React.FC = () => {
     return (
         <ContainerHeader>
             <div className="container">
-                <a href="#">
-                    <img src={logoImg} alt="logo" />
-                </a>
+                <Link to="home" spy={true} smooth={true}
+                    offset={-325} duration={1000}><img src={logoImg} alt="logo" /></Link>
                 <nav>
-                    <a className="aNav" href="#">Sobre mim</a>
-                    <a className="aNav" href="#">Minhas Skills</a>
-                    <a className="aNav" href="#">Projetos</a>
-                    <a className="aNav" href="#">Contato</a>
+                    <Link className="aNav" to="aboutMe" spy={true} smooth={true}
+                        offset={-325} duration={1000}>Sobre mim</Link>
+                    <Link className="aNav" to="mySkills" spy={true} smooth={true}
+                        offset={-275} duration={1000}>Minhas Skills</Link>
+                    <Link className="aNav" to="" spy={true} smooth={true}
+                        offset={-325} duration={1000}>Projetos</Link>
+                    <Link className="aNav" to="" spy={true} smooth={true}
+                        offset={-325} duration={1000}>Contato</Link>
                 </nav>
             </div>
         </ContainerHeader>

@@ -7,6 +7,7 @@ export const ContainerHeader = styled.header`
      position: fixed;
      background: #000000;
      z-index: 999;
+     user-select: none;
 
     .container{
         width: 100%;
@@ -23,6 +24,7 @@ export const ContainerHeader = styled.header`
     }
 
     a{
+        cursor: pointer;
         text-decoration: none;
         img{
             width: 65px;

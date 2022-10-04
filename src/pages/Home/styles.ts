@@ -81,6 +81,7 @@ export const Container = styled.div`
             border: none;
             background: #FFB400;
             color: #000000;
+            letter-spacing: 0;
             transition:  0.3s;
             font-weight: 500;
             font-size: 16px;
