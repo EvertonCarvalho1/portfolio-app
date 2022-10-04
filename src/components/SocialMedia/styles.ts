@@ -23,9 +23,9 @@ export const Container = styled.div`
 
                     &:hover{
                         color: #FFF;
-                        transform: scale(1.3);
-                        -webkit-transform: scale(1.3);
-                        -ms-transform: scale(1.3);
+                        transform: scale(1.1);
+                        -webkit-transform: scale(1.1);
+                        -ms-transform: scale(1.1);
                     }
                 }
             }

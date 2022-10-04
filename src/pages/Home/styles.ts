@@ -47,8 +47,7 @@ export const Container = styled.div`
                 margin: 16px 16px 0px;
                 h1{
                     line-height: 2.2rem;
-                    font-family: "Roboto", serif;
-                    font-size: 20px;
+                    font-size: 17px;
                     font-weight: normal;
                 }
             }
@@ -64,8 +63,7 @@ export const Container = styled.div`
     .welcomeText{
         h1{
             line-height: 2.2rem;
-            font-family: "Roboto", serif;
-            font-size: 20px;
+            font-size: 17px;
             color: #FFB400;
             font-weight: normal;
             margin: 16px 0px 0px 0px;
@@ -85,6 +83,10 @@ export const Container = styled.div`
             transition:  0.3s;
             font-weight: 500;
             font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
             &:hover{
                 background: #ba8400;
                 color: #FFF; 

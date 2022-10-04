@@ -56,11 +56,6 @@ const Main: React.FC = () => {
                     <div
                         id="mySkills"
                         className="mySkills"
-                        data-aos='fade-right'
-                        data-aos-anchor=".mySkills"
-                        data-aos-easing="ease-in-sine"
-                        data-aos-offset="500"
-                        data-aos-duration="500"
                     >
                         <MySkills />
                     </div>

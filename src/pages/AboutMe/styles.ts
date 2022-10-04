@@ -39,9 +39,8 @@ export const Container = styled.div`
         p{
             margin: 40px 0 15px;
             line-height: 2.2rem;
-            font-family: "Roboto", serif;
             font-weight: normal;
-            font-size: 18px;
+            font-size: 16px;
             color: #FFF;
             & + p{
                 margin: 0 0 32px;

@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import WebIcon from '@mui/icons-material/Web';
+import ConstructionIcon from '@mui/icons-material/Construction';
+import LibraryAddIcon from '@mui/icons-material/LibraryAdd';
+
 import { Container } from "./styles";
 
 const MySkills: React.FC = () => {
 
+    useEffect(() => {
+        Aos.init({
+            duration: 3000,
+            mirror: true
+        });
+    }, []);
 
     return (
         <Container>
@@ -12,8 +23,15 @@ const MySkills: React.FC = () => {
 
             <div className="containerSkills">
 
-                <div className="cardSkills">
+                <div
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    className="cardSkills"
+                    data-aos-offset="300"
+                    data-aos-duration="1000"
+                >
                     <div className="icon">
+                        <WebIcon />
                     </div>
 
                     <h1>Front-End</h1>
@@ -26,8 +44,15 @@ const MySkills: React.FC = () => {
                     </ul>
                 </div>
 
-                <div className="cardSkills">
+                <div
+                    data-aos="fade-down"
+                    data-aos-anchor-placement="top-bottom"
+                    className="cardSkills"
+                    data-aos-offset="300"
+                    data-aos-duration="1000"
+                >
                     <div className="icon">
+                        <ConstructionIcon />
                     </div>
 
                     <h1>Ferramentas</h1>
@@ -40,8 +65,15 @@ const MySkills: React.FC = () => {
                     </ul>
                 </div>
 
-                <div className="cardSkills">
+                <div
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    className="cardSkills"
+                    data-aos-offset="300"
+                    data-aos-duration="1000"
+                >
                     <div className="icon">
+                        <LibraryAddIcon />
                     </div>
 
                     <h1>Outros</h1>

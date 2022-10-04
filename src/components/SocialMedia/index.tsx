@@ -11,15 +11,15 @@ const SocialMedia: React.FC = () => {
         <Container>
             <div className="socialMedia">
                 <div>
-                    <a href=""><GitHubIcon /></a>
+                    <a href="https://github.com/EvertonCarvalho1" target={"_blank"}><GitHubIcon /></a>
                 </div>
 
                 <div>
-                    <a href=""><LinkedInIcon /></a>
+                    <a href="https://www.linkedin.com/in/everton-carvalho-9395a6137/" target={"_blank"}><LinkedInIcon /></a>
                 </div>
 
                 <div>
-                    <a href=""><InstagramIcon /></a>
+                    <a href="https://www.instagram.com/http.everton_/" target={"_blank"}><InstagramIcon /></a>
                 </div>
             </div>
         </Container>
