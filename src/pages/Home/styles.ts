@@ -64,7 +64,7 @@ export const Container = styled.div`
     .welcomeText{
         h1{
             line-height: 2.2rem;
-            font-family: "Montserrat", Sans-serif;;
+            font-family: "Montserrat", serif;;
             font-size: 20px;
             color: #FFB400;
             font-weight: normal;

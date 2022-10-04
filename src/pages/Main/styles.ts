@@ -16,6 +16,16 @@ export const Container = styled.div`
         margin: 0 auto;
         max-width: 1156px;
         padding: 0 20px;
+
+        > svg{
+        position: absolute; 
+        font-size: 200px;
+        color: #0f0f0f;
+        z-index: 9999;
+        bottom: -395px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
     }
 
     .mySkills0{
