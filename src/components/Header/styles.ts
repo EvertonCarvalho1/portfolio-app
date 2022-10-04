@@ -24,14 +24,9 @@ export const ContainerHeader = styled.header`
 
     a{
         text-decoration: none;
-        h1{
-            font-size: 24px;
-            color: #FFB400;
-            font-weight:700;
-            transition: 0.3s;
-            &:hover{
-                text-shadow: 0px 0px 16px #FFB400;
-            }
+        img{
+            width: 65px;
+            height: 65px;
         }
     }
 
@@ -60,6 +55,7 @@ export const ContainerHeader = styled.header`
             transform: scale(0, 1);
             transform-origin: 0% 100%;
             transition: transform 0.3s ease;
+            margin-bottom: -3px;
         }
 
         .aNav:hover::after{
