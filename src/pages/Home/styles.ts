@@ -1,19 +1,35 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    align-items: center;
-    margin: 225px auto ;
-    text-align: center;
-    width: 100%;
-    max-width: 1156px;
-    height: 450px;
+    position: relative;
+    padding: 0 70px 0 20px;
+
+    > svg{
+        position: absolute; 
+        font-size: 200px;
+        color: #000000;
+        z-index: 9999;
+        bottom: -216px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .containerHome{
+        display: flex;
+      
+        .containerText{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+        margin: 225px auto ;
+        text-align: center;
+        width: 100%;
+        max-width: 1156px;
+        height: 425px;
 
 
-    .homeTextContainer{
+        .homeTextContainer{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -56,7 +72,8 @@ export const Container = styled.div`
             } 
         }
 
-    .container {
+    .containerButton {
+        margin-top: 5px;
         .buttonSeeProjects{
             width: 169px;
             height: 48px;
@@ -101,6 +118,12 @@ export const Container = styled.div`
             transform: rotate(360deg);
           }
         }
+    
+    }
+    }
+   
+
+ 
 `;
 
 

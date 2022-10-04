@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    padding: 20px 0px 20px 0px;
+    padding: 20px;
     margin: 0 auto;
     background: #0a0a0c;
     border-radius: 8px;
@@ -28,6 +28,7 @@ export const Container = styled.div`
    
     .aboutMeDescription{
         margin-left: 30px;
+        padding: 0 30px 0 0;
         h1{
             font-size: 35px;
             line-height: 57px;
@@ -48,31 +49,10 @@ export const Container = styled.div`
         }
     }
 
-    .socialMedia{
-            display: flex;
-            align-items: center;
-            transform: rotate(-90deg);
-            a{
-                margin-bottom: -125px;
-                transform: rotate(-270deg);
-                text-decoration: none;
-                color: #FFB400;     
-                & + a{
-                    margin-left: 25px;
-                }
-                svg{
-                    font-size: 50px;
-                    transition: 0.3s ease;
+    
+         
+         
 
-                    &:hover{
-                        color: #FFF;
-                        transform: scale(1.3);
-                        -webkit-transform: scale(1.3);
-                        -ms-transform: scale(1.3);
-                    }
-                }
-            }
-
-        }  
+      
     }
 `;

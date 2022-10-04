@@ -1,9 +1,7 @@
 import React from "react";
 import { Container } from "./styles";
 import evertonImg from '../../assets/Everton.svg';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import InstagramIcon from '@mui/icons-material/Instagram';
+import SocialMedia from "../../components/SocialMedia";
 
 const AboutMe: React.FC = () => {
     return (
@@ -27,11 +25,7 @@ const AboutMe: React.FC = () => {
 
                 </div>
 
-                <div className="socialMedia">
-                    <a className="rotate" href=""><GitHubIcon /></a>
-                    <a className="rotate" href=""><LinkedInIcon /></a>
-                    <a className="rotate" href=""><InstagramIcon /></a>
-                </div>
+                <SocialMedia />
             </div>
         </Container>
     )
