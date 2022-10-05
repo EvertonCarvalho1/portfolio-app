@@ -1,8 +1,8 @@
 import React from "react";
-import { ContainerHeader } from "./styles";
-
-import logoImg from '../../assets/logo.png';
 import { Link } from 'react-scroll'
+
+import { ContainerHeader } from "./styles";
+import logoImg from '../../assets/logo.png';
 
 const Header: React.FC = () => {
     return (

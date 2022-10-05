@@ -7,10 +7,8 @@ const AboutMe: React.FC = () => {
     return (
         <Container>
             <div className="aboutMecontainer">
-
                 <div className="imgContainer">
                     <img src={evertonImg} alt="Everton Dev" />
-
                 </div>
 
                 <div className="aboutMeDescription">
@@ -22,9 +20,7 @@ const AboutMe: React.FC = () => {
                     <p>
                         Adoro aprender coisas novas, trabalhar em equipe e resolver problemas. Facilitar a vida das pessoas com o meu trabalho é o que me motiva.
                     </p>
-
                 </div>
-
                 <SocialMedia />
             </div>
         </Container>

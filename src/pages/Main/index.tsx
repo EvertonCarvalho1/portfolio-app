@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import ArrowDropDown from '@mui/icons-material/ArrowDropDown';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -6,7 +7,7 @@ import Header from "../../components/Header";
 import AboutMe from "../AboutMe";
 import Home from "../Home";
 import MySkills from "../MySkills";
-import ArrowDropDown from '@mui/icons-material/ArrowDropDown';
+import Projects from "../Projects";
 
 import { Container } from "./styles";
 
@@ -59,6 +60,13 @@ const Main: React.FC = () => {
                     >
                         <MySkills />
                     </div>
+                </div>
+
+                <div
+                    className='projects'
+                    id="projects"
+                >
+                    <Projects />
                 </div>
             </Container>
         </>

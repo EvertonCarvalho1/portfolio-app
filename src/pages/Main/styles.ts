@@ -19,14 +19,14 @@ export const Container = styled.div`
         padding: 0 20px;
 
         > svg{
-        position: absolute; 
-        font-size: 200px;
-        color: #0f0f0f;
-        z-index: 9999;
-        bottom: -395px;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+            position: absolute; 
+            font-size: 200px;
+            color: #0f0f0f;
+            z-index: 9999;
+            bottom: -395px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
     }
 
     .mySkills0{
@@ -42,5 +42,10 @@ export const Container = styled.div`
         width: 100%;
         margin: 0 auto;
         max-width: 1156px;
+    }
+
+    .projects{
+        width: 100%;
+        height: 500px;
     }
 `;

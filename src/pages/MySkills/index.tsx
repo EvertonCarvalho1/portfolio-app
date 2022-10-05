@@ -22,7 +22,6 @@ const MySkills: React.FC = () => {
             </div>
 
             <div className="containerSkills">
-
                 <div
                     data-aos="fade-up"
                     data-aos-anchor-placement="top-bottom"
