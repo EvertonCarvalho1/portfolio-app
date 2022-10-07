@@ -36,7 +36,9 @@ export function Main() {
                     <Home />
                 </div>
 
-                <div className="aboutMe0">
+                <div
+                    className="aboutMe0"
+                >
                     <div
                         id="aboutMe"
                         className="aboutMe"
@@ -59,10 +61,7 @@ export function Main() {
                         className="mySkills"
                     >
                         <MySkills />
-
                     </div>
-
-                    <ArrowDropDown />
                 </div>
 
                 <div

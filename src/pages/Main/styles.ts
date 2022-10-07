@@ -37,31 +37,18 @@ export const Container = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-
-        > svg{
-            position: absolute; 
-            font-size: 200px;
-            color: #161617;
-            z-index: 9999;
-            bottom: -1820px;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
     }
     .mySkills{
         width: 100%;
         margin: 0 auto;
         max-width: 1156px;
-
-        
- 
     }
 
     .projects{
         display: flex;
         justify-content: center;
         width: 100%;
-        padding: 100px 20px;
+        padding: 100px 20px ;
         background-color: #0f0f0f;
     }
 `;

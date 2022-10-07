@@ -24,6 +24,7 @@ export function Home() {
                         text="Ver Projetos"
                         href="https://github.com/EvertonCarvalho1"
                         backgroundColor='#000'
+                        to={'projects'}
                     />
                 </div>
             </div>

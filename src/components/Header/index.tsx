@@ -9,14 +9,16 @@ export function Header() {
         <ContainerHeader>
             <div className="container">
                 <Link to="home" spy={true} smooth={true}
-                    offset={-325} duration={1000}><img src={logoImg} alt="logo" /></Link>
+                    offset={-325} duration={1000}>
+                    <img src={logoImg} alt="logo" />
+                </Link>
                 <nav>
-                    <Link className="aNav" to="www.google.com" spy={true} smooth={true}
+                    <Link className="aNav" to="aboutMe" spy={true} smooth={true}
                         offset={-325} duration={1000}>Sobre mim</Link>
                     <Link className="aNav" to="mySkills" spy={true} smooth={true}
                         offset={-275} duration={1000}>Minhas Skills</Link>
-                    <Link className="aNav" to="" spy={true} smooth={true}
-                        offset={-325} duration={1000}>Projetos</Link>
+                    <Link className="aNav" to="projects" spy={true} smooth={true}
+                        offset={-200} duration={1000}>Projetos</Link>
                     <Link className="aNav" to="" spy={true} smooth={true}
                         offset={-325} duration={1000}>Contato</Link>
                 </nav>
