@@ -6,7 +6,7 @@ import LibraryAddIcon from '@mui/icons-material/LibraryAdd';
 
 import { Container } from "./styles";
 
-const MySkills: React.FC = () => {
+export function MySkills() {
 
     useEffect(() => {
         Aos.init({
@@ -88,7 +88,3 @@ const MySkills: React.FC = () => {
         </Container>
     );
 }
-
-export default MySkills;
-
-

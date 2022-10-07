@@ -4,7 +4,7 @@ import { Link } from 'react-scroll'
 import { ContainerHeader } from "./styles";
 import logoImg from '../../assets/logo.png';
 
-const Header: React.FC = () => {
+export function Header() {
     return (
         <ContainerHeader>
             <div className="container">
@@ -24,5 +24,3 @@ const Header: React.FC = () => {
         </ContainerHeader>
     )
 }
-
-export default Header;

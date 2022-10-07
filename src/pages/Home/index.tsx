@@ -1,9 +1,10 @@
 import React from "react";
 import { Container } from "./styles";
 import ArrowDropDown from '@mui/icons-material/ArrowDropDown';
-import SocialMedia from "../../components/SocialMedia";
+import { SocialMedia } from "../../components/SocialMedia";
+import { ButtonCustom } from "../../components/ButtonCustom";
 
-const Home: React.FC = () => {
+export function Home() {
     return (
         <Container>
             <div className="containerHome">
@@ -19,18 +20,10 @@ const Home: React.FC = () => {
                     <div className="welcomeText">
                         <h1>Bem vindo ao meu portfolio!</h1>
                     </div>
-
-                    <div className="containerButton">
-                        <div className="animated-border"></div>
-                        <div className="corner">
-                            <a href="https://github.com/EvertonCarvalho1" target={"_blank"} className="buttonSeeProjects">Ver Projetos</a>
-                        </div>
-                    </div>
+                    <ButtonCustom />
                 </div>
             </div>
             <ArrowDropDown />
         </Container>
     )
 };
-
-export default Home;

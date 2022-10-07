@@ -2,24 +2,20 @@ import React from "react";
 import { Link } from 'react-scroll'
 
 import { Container } from "./styles";
-import logoImg from '../../assets/logo.png';
+import dtmoney from '../../assets/dtmoney.png';
 
-const Projects: React.FC = () => {
-
-
+export function Projects() {
     return (
-
-
         <Container>
 
             <h1>Meus Projetos</h1>
 
             <div className='component'>
-                <div>
-                    <div className="img1">
 
-                    </div>
+                <div className="img1">
+                    <img src={dtmoney} alt='dtmoney' />
                 </div>
+
 
                 <div>
                     <div className="title">
@@ -31,9 +27,6 @@ const Projects: React.FC = () => {
                     </div>
 
                     <div className="containerFooter">
-                        <div className="img2">
-
-                        </div>
                         <div className="button">
 
                         </div>

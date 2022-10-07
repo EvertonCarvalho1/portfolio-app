@@ -6,7 +6,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 
 import { Container } from "./styles";
 
-const SocialMedia: React.FC = () => {
+export function SocialMedia() {
     return (
         <Container>
             <div className="socialMedia">
@@ -25,10 +25,3 @@ const SocialMedia: React.FC = () => {
         </Container>
     )
 }
-
-export default SocialMedia;
-
-
-
-
-

@@ -13,22 +13,23 @@ export const Container = styled.header`
     }
     .component{
         width: 100%;
-        background-color: green;
+        background: #0a0a0c;
         display: flex;
         flex-direction: row;
         justify-content: center;
         padding: 40px;
         border-radius: 8px;
         .img1{
-            width: 200px;
-            height: 200px;
-            background-color: red;
             margin-right: 40px;
+            img{
+                width: 280px;
+                height: 100%;
+            }
         }
 
         .containerFooter{
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
            .img2{
                 width: 100px;
                 height: 50px;

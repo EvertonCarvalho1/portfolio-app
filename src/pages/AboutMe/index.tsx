@@ -1,9 +1,9 @@
 import React from "react";
 import { Container } from "./styles";
 import evertonImg from '../../assets/Everton.svg';
-import SocialMedia from "../../components/SocialMedia";
+import { SocialMedia } from "../../components/SocialMedia";
 
-const AboutMe: React.FC = () => {
+export function AboutMe() {
     return (
         <Container>
             <div className="aboutMecontainer">
@@ -26,6 +26,3 @@ const AboutMe: React.FC = () => {
         </Container>
     )
 }
-
-export default AboutMe;
-
