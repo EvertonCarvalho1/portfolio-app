@@ -6,8 +6,11 @@ export const ContainerHeader = styled.header`
      height: 131px;
      position: fixed;
      background: #000000;
-     z-index: 999;
+     z-index: 9999;
      user-select: none;
+    -webkit-box-shadow: -1px 14px 11px 1px rgba(0,0,0,0.7);
+    -moz-box-shadow: -1px 14px 11px 1px rgba(0,0,0,0.7);
+    box-shadow: -1px 14px 11px 1px rgba(0,0,0,0.7);
 
     .container{
         width: 100%;

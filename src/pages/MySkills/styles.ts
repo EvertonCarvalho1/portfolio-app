@@ -45,7 +45,6 @@ export const Container = styled.section`
         width: 100px;
         height: 100px;  
         margin-bottom: 20px;
-        cursor: pointer;
             svg{
                 transition: 0.3s ease;
                 width: 100px;

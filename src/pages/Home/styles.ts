@@ -8,7 +8,6 @@ export const Container = styled.div`
         position: absolute; 
         font-size: 200px;
         color: #000000;
-        z-index: 9999;
         bottom: -216px;
         left: 50%;
         transform: translate(-50%, -50%);

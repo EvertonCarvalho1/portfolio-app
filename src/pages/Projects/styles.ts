@@ -9,7 +9,6 @@ export const Container = styled.header`
             position: absolute; 
             font-size: 200px;
             color: #161617;
-            z-index: 9999;
             top: -85px;
             left: 50%;
             transform: translate(-50%, -50%);
