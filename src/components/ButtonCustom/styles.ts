@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+type Props = {
+    backgroundColor: string;
+}
+
+export const Container = styled.div<Props>`
     .containerButton {
         margin-top: 5px;
         .buttonSeeProjects{
@@ -30,6 +34,7 @@ export const Container = styled.div`
           justify-content: center;
           align-items: center;
           position: relative;
+          border-radius: 5px;
         }
         .animated-border {
           width: 200px;
@@ -37,11 +42,13 @@ export const Container = styled.div`
           background:  #FFB400;
           position: absolute;
           animation: rotate 3s infinite ease-in-out;
+          border-radius: 5px;
         }
         .corner {
           width: 180px;
           height: 60px;
-          background: #000;
+          background: ${props => props.backgroundColor && props.backgroundColor};
+          border-radius: 5px;
           z-index: 1;
           display: flex;
           align-items: center;

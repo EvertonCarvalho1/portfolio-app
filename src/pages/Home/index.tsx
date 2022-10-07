@@ -20,7 +20,11 @@ export function Home() {
                     <div className="welcomeText">
                         <h1>Bem vindo ao meu portfolio!</h1>
                     </div>
-                    <ButtonCustom />
+                    <ButtonCustom
+                        text="Ver Projetos"
+                        href="https://github.com/EvertonCarvalho1"
+                        backgroundColor='#000'
+                    />
                 </div>
             </div>
             <ArrowDropDown />

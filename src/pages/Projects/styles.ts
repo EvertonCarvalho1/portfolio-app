@@ -19,6 +19,22 @@ export const Container = styled.header`
         justify-content: center;
         padding: 40px;
         border-radius: 8px;
+
+        h1{
+            font-size: 20px;
+            line-height: 57px;
+            font-weight: 700;
+            color: #FFB400; 
+        }
+
+        .article{
+            p{
+                line-height: 2.2rem;
+                font-weight: normal;
+                font-size: 16px;
+                color: #FFF;
+            }
+        }
         .img1{
             margin-right: 40px;
             img{
@@ -30,6 +46,7 @@ export const Container = styled.header`
         .containerFooter{
             display: flex;
             justify-content: flex-end;
+            margin-top: 30px;
            .img2{
                 width: 100px;
                 height: 50px;
@@ -38,10 +55,9 @@ export const Container = styled.header`
            .button{
                 width: 100px;
                 height: 50px;
-                background-color: red;
+               
+                background-color: red; 
             } 
         }
-
-
     }
 `;

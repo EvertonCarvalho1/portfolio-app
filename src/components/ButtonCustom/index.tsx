@@ -1,15 +1,21 @@
-import React from "react";
+import React, { HTMLAttributeAnchorTarget } from "react";
 import { Link } from 'react-scroll'
 
 import { Container } from "./styles";
 
-export function ButtonCustom() {
+type Props = {
+    text: string;
+    href: string
+    backgroundColor: string;
+}
+
+export function ButtonCustom({ text, href, backgroundColor }: Props) {
     return (
-        <Container>
+        <Container backgroundColor={backgroundColor}>
             <div className="containerButton">
                 <div className="animated-border"></div>
                 <div className="corner">
-                    <a href="https://github.com/EvertonCarvalho1" target={"_blank"} className="buttonSeeProjects">Ver Projetos</a>
+                    <a href={href} target={"_blank"} className="buttonSeeProjects">{text}</a>
                 </div>
             </div>
         </Container>

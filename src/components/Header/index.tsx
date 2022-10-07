@@ -11,7 +11,7 @@ export function Header() {
                 <Link to="home" spy={true} smooth={true}
                     offset={-325} duration={1000}><img src={logoImg} alt="logo" /></Link>
                 <nav>
-                    <Link className="aNav" to="aboutMe" spy={true} smooth={true}
+                    <Link className="aNav" to="www.google.com" spy={true} smooth={true}
                         offset={-325} duration={1000}>Sobre mim</Link>
                     <Link className="aNav" to="mySkills" spy={true} smooth={true}
                         offset={-275} duration={1000}>Minhas Skills</Link>
