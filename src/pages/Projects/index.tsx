@@ -5,8 +5,15 @@ import { Container } from "./styles";
 import logoImg from '../../assets/logo.png';
 
 const Projects: React.FC = () => {
+
+
     return (
+
+
         <Container>
+
+            <h1>Meus Projetos</h1>
+
             <div className='component'>
                 <div>
                     <div className="img1">

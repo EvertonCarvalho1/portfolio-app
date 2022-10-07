@@ -59,7 +59,10 @@ const Main: React.FC = () => {
                         className="mySkills"
                     >
                         <MySkills />
+
                     </div>
+
+                    <ArrowDropDown />
                 </div>
 
                 <div
