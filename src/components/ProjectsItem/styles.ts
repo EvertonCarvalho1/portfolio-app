@@ -1,10 +1,12 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 type Props = {
     repoId: number;
 }
 
 export const Container = styled.div<Props>`
+
+
 
         width: 100%;
         background: #0a0a0c;
@@ -40,10 +42,28 @@ export const Container = styled.div<Props>`
         }
         .img1{
             margin-right: 40px;
+
+            ${props => props.repoId === 3
+        ?
+        css`
+                width: 390px;
+                height: 224px;
+                display: flex;
+                justify-content: center;
+                img{
+                    width: 110px;
+                    height: 100%;
+                }
+            `
+        :
+        css`
             img{
                 width: 280px;
                 height: 100%;
             }
+        `
+    }
+           
         }
 
         .containerFooter{
