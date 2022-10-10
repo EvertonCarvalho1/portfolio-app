@@ -9,11 +9,12 @@ type Props = {
     repoName: string;
     repoDescription: string;
     repoLink: string;
+    repoId: number;
 }
 
-export function ProjectsItem({ repoDescription, repoImage, repoLink, repoName }: Props) {
+export function ProjectsItem({ repoDescription, repoImage, repoLink, repoName, repoId }: Props) {
     return (
-        <Container>
+        <Container repoId={repoId}>
 
             <div className="img1">
                 <img src={repoImage} alt={repoName} />

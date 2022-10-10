@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+type Props = {
+    repoId: number;
+}
+
+export const Container = styled.div<Props>`
 
         width: 100%;
         background: #0a0a0c;

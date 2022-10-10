@@ -2,6 +2,9 @@ import React, { useEffect } from "react";
 import Aos from 'aos';
 
 import dtmoney from '../../assets/dtmoney.png';
+import letmeask from '../../assets/letmeask.png';
+import gameplay from '../../assets/gameplay.png';
+
 import { ProjectsItem } from "../../components/ProjectsItem";
 
 import { Container } from "./styles";
@@ -19,14 +22,14 @@ export function Projects() {
         },
         {
             id: 2,
-            repoImage: dtmoney,
+            repoImage: letmeask,
             repoName: 'Letmeask-nlw',
             repoDescription: 'Letmeask é perfeito para criadores de conteúdos poderem criar salas de Q&A com o seu público, de uma forma muito organizada e democrática.',
             repoLink: 'https://github.com/EvertonCarvalho1/letmeask-nlw'
         },
         {
             id: 3,
-            repoImage: dtmoney,
+            repoImage: gameplay,
             repoName: 'Gameplay-nlw',
             repoDescription: 'Projeto desenvolvido na missão React Native no NLW #06',
             repoLink: 'https://github.com/EvertonCarvalho1/gameplay-nlw'
@@ -81,6 +84,7 @@ export function Projects() {
                             repoName={item.repoName}
                             repoDescription={item.repoDescription}
                             repoLink={item.repoLink}
+                            repoId={item.id}
                         />
                     </div>
 
