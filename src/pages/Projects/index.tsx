@@ -4,6 +4,9 @@ import Aos from 'aos';
 import dtmoney from '../../assets/dtmoney.png';
 import letmeask from '../../assets/letmeask.png';
 import gameplay from '../../assets/gameplay.png';
+import gobarber from '../../assets/gobarber.png';
+import githubExplorer from '../../assets/githubExplorer.png';
+import devNews from '../../assets/devnews.png';
 
 import { ProjectsItem } from "../../components/ProjectsItem";
 
@@ -22,35 +25,35 @@ export function Projects() {
         },
         {
             id: 2,
-            repoImage: letmeask,
-            repoName: 'Letmeask-nlw',
-            repoDescription: 'Letmeask é perfeito para criadores de conteúdos poderem criar salas de Q&A com o seu público, de uma forma muito organizada e democrática.',
-            repoLink: 'https://github.com/EvertonCarvalho1/letmeask-nlw'
-        },
-        {
-            id: 3,
             repoImage: gameplay,
             repoName: 'Gameplay-nlw',
             repoDescription: 'Projeto desenvolvido na missão React Native no NLW #06',
             repoLink: 'https://github.com/EvertonCarvalho1/gameplay-nlw'
         },
         {
+            id: 3,
+            repoImage: letmeask,
+            repoName: 'Letmeask-nlw',
+            repoDescription: 'Letmeask é perfeito para criadores de conteúdos poderem criar salas de Q&A com o seu público, de uma forma muito organizada e democrática.',
+            repoLink: 'https://github.com/EvertonCarvalho1/letmeask-nlw'
+        },
+        {
             id: 4,
-            repoImage: dtmoney,
+            repoImage: gobarber,
             repoName: 'Gobarber-web',
             repoDescription: 'Plataforma web do gobarber, construído utilizando React.js e Typescript.',
             repoLink: 'https://github.com/EvertonCarvalho1/gobarber-web'
         },
         {
             id: 5,
-            repoImage: dtmoney,
+            repoImage: githubExplorer,
             repoName: 'Github-explorer',
             repoDescription: 'Projeto desenvolvido nas aulas do Bootcamp GoStack 11 da Rocketseat.',
             repoLink: 'https://github.com/EvertonCarvalho1/github-explorer'
         },
         {
             id: 6,
-            repoImage: dtmoney,
+            repoImage: devNews,
             repoName: 'Devnews-web',
             repoDescription: 'Esta aplicação fornece tudo o que é necessário para cadastrar e gerenciar notícias.',
             repoLink: 'https://github.com/EvertonCarvalho1/devnews-web'

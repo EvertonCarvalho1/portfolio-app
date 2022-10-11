@@ -43,7 +43,7 @@ export const Container = styled.div<Props>`
         .img1{
             margin-right: 40px;
 
-            ${props => props.repoId === 3
+            ${props => props.repoId === 2
         ?
         css`
                 width: 390px;
