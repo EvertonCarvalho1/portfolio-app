@@ -50,4 +50,20 @@ export const Container = styled.div`
         padding: 100px 20px ;
         background-color: #0f0f0f;
     }
+
+    .contact{
+        width: 100%;
+        height: 500px;
+        background-color: #161617;
+        position: relative;
+        
+        > svg{
+            position: absolute; 
+            font-size: 200px;
+            color: #0f0f0f;
+            bottom: 286px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
 `;

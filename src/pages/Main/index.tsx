@@ -70,6 +70,13 @@ export function Main() {
                 >
                     <Projects />
                 </div>
+
+                <div
+                    className='contact'
+                    id="contact"
+                >
+                    <ArrowDropDown />
+                </div>
             </Container>
         </>
     )
