@@ -10,6 +10,7 @@ import { MySkills } from "../MySkills";
 import { Projects } from "../Projects";
 
 import { Container } from "./styles";
+import Contact from "../Contact";
 
 export function Main() {
     useEffect(() => {
@@ -18,7 +19,6 @@ export function Main() {
             mirror: true
         });
     }, []);
-
 
     return (
         <>
@@ -76,6 +76,7 @@ export function Main() {
                     id="contact"
                 >
                     <ArrowDropDown />
+                    <Contact />
                 </div>
             </Container>
         </>
