@@ -11,6 +11,7 @@ import { Projects } from "../Projects";
 
 import { Container } from "./styles";
 import Contact from "../Contact";
+import { Toaster } from "react-hot-toast";
 
 export function Main() {
     useEffect(() => {
@@ -24,6 +25,7 @@ export function Main() {
         <>
             <Header />
             <Container>
+                <div><Toaster /></div>
                 <div
                     id="home"
                     data-aos='fade-right'

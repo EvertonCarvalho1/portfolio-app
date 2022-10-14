@@ -53,9 +53,9 @@ export const Container = styled.div`
 
     .contact{
         width: 100%;
-        height: 500px;
         background-color: #161617;
         position: relative;
+        padding: 200px;
         
         > svg{
             position: absolute; 

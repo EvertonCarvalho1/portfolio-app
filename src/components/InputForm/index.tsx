@@ -17,7 +17,6 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
     name: string;
     containerStyle?: object;
     icon?: any;
-
 }
 
 const InputForm: React.FC<InputProps> = ({ name, containerStyle = {}, icon: Icon, ...rest }) => {
@@ -29,11 +28,11 @@ const InputForm: React.FC<InputProps> = ({ name, containerStyle = {}, icon: Icon
     const handleInputBlur = useCallback(() => {
         setIsFocused(false);
 
-        // if(inputRef.current?.value){
-        //     setIsFilled(true) 
-        // }else{
-        //     setIsFilled(false);
-        // }
+        if (inputRef.current?.value) {
+            setIsFilled(true)
+        } else {
+            setIsFilled(false);
+        }
         // !! as duas exclamações transformam a sintaxe em valor booleano
         setIsFilled(!!inputRef.current?.value);
     }, []);
@@ -50,7 +49,6 @@ const InputForm: React.FC<InputProps> = ({ name, containerStyle = {}, icon: Icon
         });
 
     }, [fieldName, registerField])
-
 
     return (
         <Container

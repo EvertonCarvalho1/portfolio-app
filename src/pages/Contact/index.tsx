@@ -1,20 +1,14 @@
 
 import React, { useCallback, useRef } from "react";
-import { FiArrowLeft, FiMail, FiUser, FiLock } from 'react-icons/fi';
+import { FiMail, FiUser } from 'react-icons/fi';
 import { FormHandles } from '@unform/core';
 import { Form } from '@unform/web';
-import { Link, useHistory } from 'react-router-dom';
 import * as Yup from 'yup';
 
-// import { useToast } from "../../hooks/toast";
-
-
-// import getValidationErrors from '../../utils/getValidationErrors'
-
 import InputForm from "../../components/InputForm";
-import ButtonForm from "../../components/ButtonForm";
 
 import { Container, Content } from './styles';
+import toast from "react-hot-toast";
 
 interface SignUpFormData {
     name: string;
@@ -25,56 +19,33 @@ interface SignUpFormData {
 const Contact: React.FC = () => {
 
     const formRef = useRef<FormHandles>(null);
-    // const { addToast } = useToast();
-    const history = useHistory();
 
     const handleSubmit = useCallback(async (data: SignUpFormData) => {
+
         try {
 
             formRef.current?.setErrors({});
 
             const schema = Yup.object().shape({
-                name: Yup.string().required('Nome obrigatório'),
-                email: Yup.string().required('Email obrigatório').email('Digite um email válido'),
-                password: Yup.string().min(6, 'No mínimo 6 dígitos'),
+                name: Yup.string().required(() => toast.error('Nome obrigatório')),
+                email: Yup.string().required(() => toast.error('Email obrigatório')).email(() => toast.error('Digite um email válido')),
             });
 
+            console.log(data)
             await schema.validate(data, {
                 abortEarly: false,
             });
 
-            // await api.post('/users', data);
-
-            history.push('/')
-
-            // addToast({
-            //     type: 'success',
-            //     title: 'Cadastro realizado',
-            //     description: 'Você ja pode fazer seu logon no GoBarber'
-            // })
-
+            toast.success("Mensagem enviada com sucesso!")
 
         } catch (err) {
-            // if (err instanceof Yup.ValidationError) {
-            //     console.log(err)
-            //     const errors = getValidationErrors(err);
-
-            //     formRef.current?.setErrors(errors);
-            //     return;
-            // }
-
-            // addToast({
-            //     type: 'error',
-            //     title: 'Erro no cadastro',
-            //     description: 'Ocorreu um erro ao fazer cadastro, tente novamente.'
-            // });
         }
     }, [])
 
     return (
         <Container>
-            <Content>
 
+            <Content>
                 <Form ref={formRef} onSubmit={handleSubmit}>
 
                     <InputForm
@@ -88,22 +59,8 @@ const Contact: React.FC = () => {
                         name='email'
                         placeholder="E-mail"
                     />
-                    <InputForm
-                        icon={FiLock}
-                        name='password'
-                        type="password"
-                        placeholder="Senha"
-                    />
-
-                    <ButtonForm type="submit">Cadastrar</ButtonForm>
-
+                    <button type="submit">Enviar</button>
                 </Form>
-
-                <Link to="/">
-                    <FiArrowLeft />
-                    Voltar para login
-                </Link>
-
             </Content>
         </Container>
     )
