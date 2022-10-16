@@ -1,67 +1,37 @@
 
-import React, { useCallback, useRef } from "react";
-import { FiMail, FiUser } from 'react-icons/fi';
-import { FormHandles } from '@unform/core';
-import { Form } from '@unform/web';
-import * as Yup from 'yup';
-
-import InputForm from "../../components/InputForm";
+import React, { FormEvent, useRef } from "react";
+import emailjs from '@emailjs/browser';
 
 import { Container, Content } from './styles';
 import toast from "react-hot-toast";
 
-interface SignUpFormData {
-    name: string;
-    email: string;
-    password: string;
-}
-
 const Contact: React.FC = () => {
+    const form = useRef<HTMLFormElement>(null);
 
-    const formRef = useRef<FormHandles>(null);
+    const sendEmail = (e: FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
 
-    const handleSubmit = useCallback(async (data: SignUpFormData) => {
-
-        try {
-
-            formRef.current?.setErrors({});
-
-            const schema = Yup.object().shape({
-                name: Yup.string().required(() => toast.error('Nome obrigatório')),
-                email: Yup.string().required(() => toast.error('Email obrigatório')).email(() => toast.error('Digite um email válido')),
-            });
-
-            console.log(data)
-            await schema.validate(data, {
-                abortEarly: false,
-            });
-
-            toast.success("Mensagem enviada com sucesso!")
-
-        } catch (err) {
+        if (form.current !== null) {
+            emailjs.sendForm('service_p1n1cu9', 'template_knoojcs', form.current, 'D5ikbopFybe6cbbE_')
+                .then((result) => {
+                    console.log(result.text);
+                }, (error) => {
+                    console.log(error.text);
+                });
         }
-    }, [])
+    };
 
     return (
         <Container>
-
-            <Content>
-                <Form ref={formRef} onSubmit={handleSubmit}>
-
-                    <InputForm
-                        icon={FiUser}
-                        name='name'
-                        placeholder="Nome"
-                    />
-
-                    <InputForm
-                        icon={FiMail}
-                        name='email'
-                        placeholder="E-mail"
-                    />
-                    <button type="submit">Enviar</button>
-                </Form>
-            </Content>
+            <form ref={form} onSubmit={sendEmail}>
+                <label>Nome</label>
+                <input type="text" name="user_name" />
+                <label>Email</label>
+                <input type="email" name="user_email" />
+                <label>Mensagem</label>
+                <textarea name="message" />
+                <input type="submit" value="Send" />
+            </form>
         </Container>
     )
 };
