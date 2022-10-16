@@ -2,7 +2,7 @@
 import React, { FormEvent, useRef } from "react";
 import emailjs from '@emailjs/browser';
 
-import { Container, Content } from './styles';
+import { Container } from './styles';
 import toast from "react-hot-toast";
 
 const Contact: React.FC = () => {

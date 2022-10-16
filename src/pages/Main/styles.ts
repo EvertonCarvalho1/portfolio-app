@@ -61,7 +61,7 @@ export const Container = styled.div`
             position: absolute; 
             font-size: 200px;
             color: #0f0f0f;
-            bottom: 286px;
+            bottom: 632px;
             left: 50%;
             transform: translate(-50%, -50%);
         }
