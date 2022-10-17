@@ -1,8 +1,12 @@
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes, css } from "styled-components";
 
-import { shade } from 'polished';
+type Props = {
+    nameIsFilled?: boolean;
+    emailIsFilled?: boolean;
+    messageIsFilled?: boolean;
+}
 
-export const Container = styled.div`
+export const Container = styled.div<Props>`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,6 +29,7 @@ export const Container = styled.div`
         background-color: #0a0a0c;
         border-radius: 8px;
         padding: 24px;
+
     form{
         display: flex;
         flex-direction: column;
@@ -34,10 +39,12 @@ export const Container = styled.div`
             margin-bottom: 8px;
             color: #FFB400;
         }
+
+
         input[type=text], 
         input[type=email]{
             height: 70px;
-            border: 0;
+            border: 2px solid #161617;
             border-radius: 5px;
             color: #3a3a3a;
             margin-bottom: 24px;
@@ -45,6 +52,22 @@ export const Container = styled.div`
             padding-left: 20px;
             color: #fff;
         }
+
+       
+        
+        
+
+        ${props => props.nameIsFilled && css`
+            input[type=text]{
+                border-color: #c53030;
+            }
+        `}
+
+        ${props => props.emailIsFilled && css`
+             input[type=email]{
+                border-color: #c53030;
+            }
+        `}
 
         textarea{
             width: 100%;
