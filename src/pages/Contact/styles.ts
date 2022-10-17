@@ -69,7 +69,7 @@ export const Container = styled.div<Props>`
                 border-color: #c53030;
             }
         `}
-        ${props => props.emailIsFilled?.length > 1 && css`
+        ${props => props.emailIsFilled?.length > 2 && css`
             input[type=email]{
                 border-color: #008000;
             }

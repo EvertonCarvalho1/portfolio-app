@@ -20,17 +20,22 @@ const Contact: React.FC = () => {
             userEmail,
             message
         },
-            userName.length
         );
 
-        // if (form.current !== null) {
-        //     emailjs.sendForm('service_p1n1cu9', 'template_knoojcs', form.current, 'wOqR_S9KIAg1emNeY')
-        //         .then((result) => {
-        //             console.log(result.text);
-        //         }, (error) => {
-        //             console.log(error.text);
-        //         });
-        // }
+        if (!!userName && !!userEmail && !!message) {
+            if (form.current !== null) {
+                emailjs.sendForm('service_p1n1cu9', 'template_knoojcs', form.current, 'wOqR_S9KIAg1emNeY')
+                    .then((result) => {
+                        console.log(result.text);
+                        toast.success('Mensagem enviada!')
+                    }, (error) => {
+                        console.log(error.text);
+                        toast.error('Algo deu errado.')
+                    });
+            }
+        } else {
+            toast.error('Preencha todos os dados.')
+        }
     };
 
 
