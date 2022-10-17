@@ -2,7 +2,7 @@
 import React, { FormEvent, useRef } from "react";
 import emailjs from '@emailjs/browser';
 
-import { Container } from './styles';
+import { Container, ContainerButton } from './styles';
 import toast from "react-hot-toast";
 
 const Contact: React.FC = () => {
@@ -30,7 +30,15 @@ const Contact: React.FC = () => {
                 <input type="email" name="user_email" />
                 <label>Mensagem</label>
                 <textarea name="message" />
-                <input type="submit" value="Send" />
+
+                <ContainerButton >
+                    <div className="containerButton">
+                        <div className="animated-border"></div>
+                        <div className="corner">
+                            <input type="submit" value="Enviar" />
+                        </div>
+                    </div>
+                </ContainerButton>
             </form>
         </Container>
     )

@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 type Props = {
-    backgroundColor: string;
+  backgroundColor: string;
 }
 
 export const Container = styled.div<Props>`
     .containerButton {
-        margin-top: 5px;
+
         .buttonSeeProjects{
             width: 169px;
             height: 48px;
@@ -27,8 +27,8 @@ export const Container = styled.div<Props>`
                 color: #FFF; 
             }
         }
-          width: 182px;
-          height: 62px;
+          width: 185px;
+          height: 65px;
           overflow: hidden;
           display: flex;
           justify-content: center;
@@ -45,8 +45,8 @@ export const Container = styled.div<Props>`
           border-radius: 5px;
         }
         .corner {
-          width: 180px;
-          height: 60px;
+          width: 183px;
+          height: 63px;
           background: ${props => props.backgroundColor && props.backgroundColor};
           border-radius: 5px;
           z-index: 1;
