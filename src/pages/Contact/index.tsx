@@ -20,7 +20,7 @@ const Contact: React.FC = () => {
             userEmail,
             message
         },
-            !!userName
+            userName.length
         );
 
         // if (form.current !== null) {
@@ -43,9 +43,9 @@ const Contact: React.FC = () => {
 
     return (
         <Container
-            emailIsFilled={!!userEmail}
-            nameIsFilled={!!userName}
-            messageIsFilled={!!message}
+            emailIsFilled={userEmail}
+            nameIsFilled={userName}
+            messageIsFilled={message}
             className='contactAnchor'
         >
             <div className="title">

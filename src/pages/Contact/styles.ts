@@ -1,9 +1,9 @@
 import styled, { keyframes, css } from "styled-components";
 
 type Props = {
-    nameIsFilled?: boolean;
-    emailIsFilled?: boolean;
-    messageIsFilled?: boolean;
+    nameIsFilled: string;
+    emailIsFilled: string;
+    messageIsFilled: string;
 }
 
 export const Container = styled.div<Props>`
@@ -53,19 +53,25 @@ export const Container = styled.div<Props>`
             color: #fff;
         }
 
-       
-        
-        
-
-        ${props => props.nameIsFilled && css`
+        ${props => props.nameIsFilled?.length === 1 && css`
             input[type=text]{
                 border-color: #c53030;
             }
         `}
+        ${props => props.nameIsFilled?.length > 1 && css`
+            input[type=text]{
+                border-color: #008000;
+            }
+        `}
 
-        ${props => props.emailIsFilled && css`
-             input[type=email]{
+        ${props => props.emailIsFilled?.length === 1 && css`
+            input[type=email]{
                 border-color: #c53030;
+            }
+        `}
+        ${props => props.emailIsFilled?.length > 1 && css`
+            input[type=email]{
+                border-color: #008000;
             }
         `}
 
@@ -74,7 +80,7 @@ export const Container = styled.div<Props>`
             height: 150px;
             padding: 12px 20px;
             box-sizing: border-box;
-            border: 0;
+            border: 2px solid #161617;
             border-radius: 4px;
             background-color: #f8f8f8;
             font-size: 16px;
@@ -84,6 +90,17 @@ export const Container = styled.div<Props>`
             color: #fff;
             font: 16px "Montserrat", sans-serif;
         }
+
+        ${props => props.messageIsFilled?.length === 1 && css`
+            textarea{
+                border-color: #c53030;
+            }
+        `}
+        ${props => props.messageIsFilled?.length > 1 && css`
+            textarea{
+                border-color: #008000;
+            }
+        `}
     }
     }
  
