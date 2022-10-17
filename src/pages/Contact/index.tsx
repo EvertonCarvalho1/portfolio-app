@@ -1,9 +1,10 @@
 
-import React, { FormEvent, useRef } from "react";
+import React, { FormEvent, useEffect, useRef } from "react";
 import emailjs from '@emailjs/browser';
 
 import { Container, ContainerButton } from './styles';
 import toast from "react-hot-toast";
+import Aos from "aos";
 
 const Contact: React.FC = () => {
     const form = useRef<HTMLFormElement>(null);
@@ -21,8 +22,20 @@ const Contact: React.FC = () => {
         }
     };
 
+    useEffect(() => {
+        Aos.init({
+            duration: 3000,
+            mirror: true
+        });
+    }, []);
+
     return (
-        <Container>
+        <Container
+            data-aos='fade-right'
+            data-aos-offset="500"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="500"
+        >
             <div className="title">
                 <h1>Fale comigo!</h1>
             </div>
