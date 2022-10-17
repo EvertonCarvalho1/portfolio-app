@@ -3,13 +3,28 @@ import styled, { keyframes } from "styled-components";
 import { shade } from 'polished';
 
 export const Container = styled.div`
-    width: 100%;
-    max-width: 447px;
-    margin: 0 auto;
     display: flex;
-    background-color: #0a0a0c;
-    border-radius: 8px;
-    padding: 24px;
+    flex-direction: column;
+    align-items: center;
+
+    .title{
+        h1{
+            font-size: 35px;
+            line-height: 57px;
+            font-weight: 700;
+            color: #FFB400;
+        }
+        margin-bottom: 50px;
+    }
+
+    .content{
+        width: 100%;
+        max-width: 447px;
+        margin: 0 auto;
+        display: flex;
+        background-color: #0a0a0c;
+        border-radius: 8px;
+        padding: 24px;
     form{
         display: flex;
         flex-direction: column;
@@ -40,13 +55,15 @@ export const Container = styled.div`
             border-radius: 4px;
             background-color: #f8f8f8;
             font-size: 16px;
-            resize: vertical;
+            resize: none;
             background-color: #161617;
             margin-bottom: 24px;
             color: #fff;
             font: 16px "Montserrat", sans-serif;
         }
     }
+    }
+ 
 `;
 
 export const ContainerButton = styled.div`

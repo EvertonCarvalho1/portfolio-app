@@ -19,8 +19,8 @@ export function Header() {
                         offset={-275} duration={1000}>Minhas Skills</Link>
                     <Link className="aNav" to="projects" spy={true} smooth={true}
                         offset={-200} duration={1000}>Projetos</Link>
-                    <Link className="aNav" to="" spy={true} smooth={true}
-                        offset={-325} duration={1000}>Contato</Link>
+                    <Link className="aNav" to="contact" spy={true} smooth={true}
+                        offset={-150} duration={1000}>Contato</Link>
                 </nav>
             </div>
         </ContainerHeader>

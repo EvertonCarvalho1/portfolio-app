@@ -55,13 +55,13 @@ export const Container = styled.div`
         width: 100%;
         background-color: #161617;
         position: relative;
-        padding: 200px;
-        
+        padding: 100px;
+ 
         > svg{
             position: absolute; 
             font-size: 200px;
             color: #0f0f0f;
-            bottom: 632px;
+            bottom: 664px;
             left: 50%;
             transform: translate(-50%, -50%);
         }

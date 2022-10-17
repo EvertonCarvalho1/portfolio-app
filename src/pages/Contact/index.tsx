@@ -23,23 +23,28 @@ const Contact: React.FC = () => {
 
     return (
         <Container>
-            <form ref={form} onSubmit={sendEmail}>
-                <label>Nome</label>
-                <input type="text" name="user_name" />
-                <label>Email</label>
-                <input type="email" name="user_email" />
-                <label>Mensagem</label>
-                <textarea name="message" />
+            <div className="title">
+                <h1>Fale comigo!</h1>
+            </div>
 
-                <ContainerButton >
-                    <div className="containerButton">
-                        <div className="animated-border"></div>
-                        <div className="corner">
-                            <input type="submit" value="Enviar" />
+            <div className="content">
+                <form ref={form} onSubmit={sendEmail}>
+                    <label>Nome:</label>
+                    <input placeholder="Digite seu nome!" type="text" name="user_name" />
+                    <label>Email:</label>
+                    <input placeholder="Digite seu email!" type="email" name="user_email" />
+                    <label>Mensagem:</label>
+                    <textarea placeholder="Digite sua mensagem!" name="message" />
+                    <ContainerButton >
+                        <div className="containerButton">
+                            <div className="animated-border"></div>
+                            <div className="corner">
+                                <input type="submit" value="Enviar" />
+                            </div>
                         </div>
-                    </div>
-                </ContainerButton>
-            </form>
+                    </ContainerButton>
+                </form>
+            </div>
         </Container>
     )
 };
