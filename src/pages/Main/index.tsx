@@ -12,6 +12,7 @@ import { Projects } from "../Projects";
 import { Container } from "./styles";
 import Contact from "../Contact";
 import { Toaster } from "react-hot-toast";
+import { Footer } from "../../components/Footer";
 
 export function Main() {
     useEffect(() => {
@@ -80,7 +81,9 @@ export function Main() {
                     <ArrowDropDown />
                     <Contact />
                 </div>
+
             </Container>
+            <Footer />
         </>
     )
 }

@@ -38,7 +38,6 @@ const Contact: React.FC = () => {
         }
     };
 
-
     useEffect(() => {
         Aos.init({
             duration: 3000,
