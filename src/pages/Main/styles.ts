@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { shade } from "polished";
 
 export const Container = styled.div`
     overflow: hidden;
@@ -66,4 +67,50 @@ export const Container = styled.div`
             transform: translate(-50%, -50%);
         }
     }
+
+    .whatsapp_float {
+          position: fixed;
+          width: 60px;
+          height: 60px;
+          bottom: 40px;
+          right: 40px;
+          background-color: #25d36694;  
+          color: #FFF;
+          border-radius: 50px;
+          text-align: center;
+          font-size: 30px;
+          //box-shadow: 2px 2px 3px #999;
+          z-index: 100;
+
+          -webkit-box-shadow: -2px 2px 25px 10px rgba(0,0,0,0.75);
+            -moz-box-shadow: -2px 2px 25px 10px rgba(0,0,0,0.75);
+            box-shadow: -2px 2px 25px 10px rgba(0,0,0,0.75);
+          &:hover{
+            background-color: #25d3664d;
+            transition: 0.3s ease ;
+            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+        }
+      }
+
+      .whatsapp-icon {
+          margin-top: 16px;
+      }
+
+      /* for mobile */
+      @media screen and (max-width: 767px) {
+          .whatsapp-icon {
+              margin-top: 10px;
+          }
+
+          .whatsapp_float {
+              width: 40px;
+              height: 40px;
+              bottom: 20px;
+              right: 10px;
+              font-size: 22px;
+          }
+      }
+
 `;
