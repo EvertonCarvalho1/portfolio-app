@@ -13,6 +13,7 @@ import { Container } from "./styles";
 import Contact from "../Contact";
 import { Toaster } from "react-hot-toast";
 import { Footer } from "../../components/Footer";
+import HeaderTest from "../../components/HeaderTest";
 
 export function Main() {
     useEffect(() => {
@@ -24,6 +25,7 @@ export function Main() {
 
     return (
         <>
+            <HeaderTest />
             <Header />
             <Container>
                 <div><Toaster /></div>
