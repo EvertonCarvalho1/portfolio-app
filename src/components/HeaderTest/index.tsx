@@ -5,7 +5,7 @@ import {
     Drawer,
     MenuItem,
 } from "@material-ui/core";
-import { Link as Anchor } from 'react-scroll'
+import { Link } from 'react-scroll'
 import MenuIcon from "@material-ui/icons/Menu";
 import logoImg from '../../assets/logo.png';
 import React, { useState, useEffect } from "react";
@@ -92,7 +92,7 @@ export default function HeaderTest() {
             setState((prevState) => ({ ...prevState, drawerOpen: false }));
 
         return (
-            <Toolbar>
+            <Toolbar className="mobileHeader">
                 <IconButton
                     {...{
                         edge: "start",
@@ -101,8 +101,9 @@ export default function HeaderTest() {
                         "aria-haspopup": "true",
                         onClick: handleDrawerOpen,
                     }}
+
                 >
-                    <MenuIcon />
+                    <MenuIcon style={{ width: 40, height: 40 }} />
                 </IconButton>
 
                 <Drawer
@@ -123,7 +124,7 @@ export default function HeaderTest() {
     const getDrawerChoices = () => {
         return headersData.map((item) => {
             return (
-                <Anchor
+                <Link
                     {...{
                         className: item.className,
                         to: item.to,
@@ -135,23 +136,23 @@ export default function HeaderTest() {
                 >
                     <MenuItem>  {item.label}</MenuItem>
 
-                </Anchor>
+                </Link>
 
             );
         });
     };
 
     const femmecubatorLogo = (
-        <Anchor to="home" spy={true} smooth={true}
+        <Link className="logo" to="home" spy={true} smooth={true}
             offset={-325} duration={1000}>
             <img src={logoImg} alt="logo" />
-        </Anchor>
+        </Link>
     );
 
     const getMenuButtons = () => {
         return headersData.map((item) => {
             return (
-                <Anchor
+                <Link
                     {...{
                         className: item.className,
                         to: item.to,
@@ -162,7 +163,7 @@ export default function HeaderTest() {
                     }}
                 >
                     {item.label}
-                </Anchor>
+                </Link>
             );
         });
     };
@@ -171,7 +172,7 @@ export default function HeaderTest() {
         <header>
             <Container className={'header'}>
                 <AppBar
-                    style={{ backgroundColor: '#000', borderBottomWidth: 1, borderBottomStyle: 'solid', borderBottomColor: '#171718' }}
+                    className='appBarContent'
                 >
                     {mobileView ? displayMobile() : displayDesktop()}
                 </AppBar>
