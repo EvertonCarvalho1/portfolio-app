@@ -1,20 +1,15 @@
 import {
     AppBar,
     Toolbar,
-    Typography,
-    makeStyles,
-    Button,
     IconButton,
     Drawer,
-    Link,
     MenuItem,
 } from "@material-ui/core";
 import { Link as Anchor } from 'react-scroll'
 import MenuIcon from "@material-ui/icons/Menu";
 import logoImg from '../../assets/logo.png';
 import React, { useState, useEffect } from "react";
-import { Link as RouterLink } from "react-router-dom";
-import { ContainerHeader } from "./styles";
+import { Container } from "./styles";
 
 const headersData = [
     {
@@ -56,38 +51,7 @@ const headersData = [
 
 ];
 
-const useStyles = makeStyles(() => ({
-    header: {
-        backgroundColor: "#400CCC",
-        paddingRight: "79px",
-        paddingLeft: "118px",
-        "@media (max-width: 900px)": {
-            paddingLeft: 0,
-        },
-    },
-    logo: {
-        fontFamily: "Work Sans, sans-serif",
-        fontWeight: 600,
-        color: "#FFFEFE",
-        textAlign: "left",
-    },
-    menuButton: {
-        fontFamily: "Open Sans, sans-serif",
-        fontWeight: 700,
-        size: "18px",
-        marginLeft: "38px",
-    },
-    toolbar: {
-        display: "flex",
-        justifyContent: "space-between",
-    },
-    drawerContainer: {
-        padding: "20px 30px",
-    },
-}));
-
 export default function HeaderTest() {
-    const { header, logo, menuButton, toolbar, drawerContainer } = useStyles();
 
     const [state, setState] = useState({
         mobileView: false,
@@ -114,7 +78,7 @@ export default function HeaderTest() {
 
     const displayDesktop = () => {
         return (
-            <Toolbar className={toolbar}>
+            <Toolbar className={'toolbar'}>
                 {femmecubatorLogo}
                 <div>{getMenuButtons()}</div>
             </Toolbar>
@@ -148,10 +112,10 @@ export default function HeaderTest() {
                         onClose: handleDrawerClose,
                     }}
                 >
-                    <div className={drawerContainer}>{getDrawerChoices()}</div>
+                    <div className={'drawerContainer'}>{getDrawerChoices()}</div>
                 </Drawer>
 
-                <div>{femmecubatorLogo}</div>
+
             </Toolbar>
         );
     };
@@ -205,11 +169,13 @@ export default function HeaderTest() {
 
     return (
         <header>
-            <ContainerHeader>
-                <AppBar className={header}>
+            <Container className={'header'}>
+                <AppBar
+                    style={{ backgroundColor: '#000', borderBottomWidth: 1, borderBottomStyle: 'solid', borderBottomColor: '#171718' }}
+                >
                     {mobileView ? displayMobile() : displayDesktop()}
                 </AppBar>
-            </ContainerHeader>
+            </Container>
         </header>
     );
 }

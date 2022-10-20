@@ -26,7 +26,7 @@ export function Main() {
     return (
         <>
             <HeaderTest />
-            <Header />
+
             <Container>
                 <div><Toaster /></div>
                 <div
