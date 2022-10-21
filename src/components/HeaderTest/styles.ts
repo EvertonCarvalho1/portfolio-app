@@ -1,10 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    .amano{
-        background-color: red;
-    }
-
 
     .mobileHeader{
         height: 131px;
