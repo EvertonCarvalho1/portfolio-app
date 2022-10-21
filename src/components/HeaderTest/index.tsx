@@ -28,7 +28,7 @@ const headersData = [
         smooth: true,
         offset: -275,
         duration: 1000,
-        label: 'Minhas Skills'
+        label: 'Habilidades'
     },
     {
         className: "aNav",
