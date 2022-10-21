@@ -29,6 +29,8 @@ export const Container = styled.div`
         }
     }
 
+    
+
     .mySkills0{
         width: 100% ;
         padding: 100px 0px;
@@ -112,5 +114,6 @@ export const Container = styled.div`
               font-size: 22px;
           }
       }
+
 
 `;
