@@ -18,7 +18,7 @@ export function MySkills() {
     return (
         <Container>
             <div className="title">
-                <h1>Minhas Skills</h1>
+                <h1>Minhas Habilidades</h1>
             </div>
 
             <div className="containerSkills">

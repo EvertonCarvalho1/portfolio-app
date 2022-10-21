@@ -87,7 +87,7 @@ export const Container = styled.div`
             align-items: center;
             justify-content: center;
             align-items: center;
-            margin: 200px auto 70px auto;
+            margin: 200px auto 100px auto;
             text-align: center;
             width: 100%;
             max-width: 1156px;
@@ -114,6 +114,9 @@ export const Container = styled.div`
                         line-height: 2.2rem;
                         font-size: 13px;
                         font-weight: normal;
+                        br{
+                            display: none;
+                        }
                     }
                 }
 
