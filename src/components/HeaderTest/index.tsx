@@ -86,10 +86,14 @@ export default function HeaderTest() {
     };
 
     const displayMobile = () => {
-        const handleDrawerOpen = () =>
+
+        const handleDrawerOpen = () => {
             setState((prevState) => ({ ...prevState, drawerOpen: true }));
-        const handleDrawerClose = () =>
+        }
+
+        const handleDrawerClose = () => {
             setState((prevState) => ({ ...prevState, drawerOpen: false }));
+        }
 
         return (
             <Toolbar className="mobileHeader">
@@ -103,25 +107,45 @@ export default function HeaderTest() {
                     }}
 
                 >
-                    <MenuIcon style={{ width: 40, height: 40 }} />
+                    <MenuIcon style={{ width: 40, height: 40, color: '#FFB400' }} />
                 </IconButton>
 
                 <Drawer
                     {...{
-                        anchor: "left",
+                        anchor: "top",
                         open: drawerOpen,
                         onClose: handleDrawerClose,
+
                     }}
                 >
-                    <div className={'drawerContainer'}>{getDrawerChoices()}</div>
+                    <div className={'drawerContent'}>
+                        <Link
+                            {...{
+                                className: 'aNav',
+                                to: 'home',
+                                spy: true,
+                                smooth: true,
+                                offset: -325,
+                                duration: 1000,
+
+                                onClick: handleDrawerClose
+                            }
+                            }
+                        >
+                            <MenuItem>Home</MenuItem>
+
+                        </Link>
+                        {getDrawerChoices()}
+                    </div>
                 </Drawer>
-
-
             </Toolbar>
         );
     };
 
     const getDrawerChoices = () => {
+        const handleDrawerClose = () => {
+            setState((prevState) => ({ ...prevState, drawerOpen: false }));
+        }
         return headersData.map((item) => {
             return (
                 <Link
@@ -132,7 +156,10 @@ export default function HeaderTest() {
                         smooth: item.smooth,
                         offset: item.offset,
                         duration: item.duration,
-                    }}
+
+                        onClick: handleDrawerClose
+                    }
+                    }
                 >
                     <MenuItem>  {item.label}</MenuItem>
 

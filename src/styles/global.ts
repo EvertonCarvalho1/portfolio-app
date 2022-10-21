@@ -14,6 +14,29 @@ export default createGlobalStyle`
 body{
     background: #000000;
     -webkit-font-smoothing: antialiased;
+
+    .MuiDrawer-paper{
+        background-color: #000;
+        width: 100%;
+
+        .drawerContent{
+            .aNav{
+                height: 19px;
+                position: relative;
+                font-size: 16px;
+                color: #FFF;
+                text-align: center;
+
+                .MuiListItem-root {
+                    justify-content: center;
+                }
+            }
+
+            
+        }
+
+
+    }
 }
 
 body, input, button{

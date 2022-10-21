@@ -1,9 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+    .amano{
+        background-color: red;
+    }
+
+
     .mobileHeader{
         height: 131px;
-        
     }
 
 .header{
@@ -84,10 +88,6 @@ export const Container = styled.div`
         -webkit-box-shadow: -1px 14px 11px 1px rgba(0,0,0,0.7);
         -moz-box-shadow: -1px 14px 11px 1px rgba(0,0,0,0.7);
         box-shadow: -1px 14px 11px 1px rgba(0,0,0,0.7);
-    }
-
-    .drawerContainer{
-        padding: 20px 30px,
     }
 
 `;
