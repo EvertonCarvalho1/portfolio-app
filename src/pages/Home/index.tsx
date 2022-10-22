@@ -28,7 +28,7 @@ export function Home() {
                     />
                 </div>
             </div>
-            <ArrowDropDown />
+            <ArrowDropDown className="ArrowDropDown" />
         </Container>
     )
 };

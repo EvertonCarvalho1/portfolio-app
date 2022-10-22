@@ -54,7 +54,7 @@ export function Main() {
                         data-aos-duration="500"
                     >
                         <AboutMe />
-                        <ArrowDropDown />
+                        <ArrowDropDown className="ArrowDropDown" />
                     </div>
                 </div>
 
@@ -80,7 +80,7 @@ export function Main() {
                     className='contact'
                     id="contact"
                 >
-                    <ArrowDropDown />
+                    <ArrowDropDown className="ArrowDropDown" />
                     <Contact />
                 </div>
 

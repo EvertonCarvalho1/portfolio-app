@@ -59,10 +59,30 @@ export const Container = styled.div`
         -moz-box-shadow: 15px 13px 13px 0px rgba(0,0,0,0.75);
         box-shadow: 15px 13px 13px 0px rgba(0,0,0,0.75);
 
+        
+        .socialMedia{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            div{
+                margin-bottom: 0;
+            }
+            a{
+                text-decoration: none;
+                color: #FFB400;
+                width: 50px;
+                height: 50px;     
+            }
+
+        }  
+
         .aboutMecontainer{
             display: flex;
             flex-direction: column;
-            padding: 24px;
+            padding: 10px;
         .imgContainer{
             width: 100%;
             height: 100%;
@@ -94,11 +114,12 @@ export const Container = styled.div`
 
             p{
                 margin: 0;
+                margin-top: 15px;
                 line-height: 2.2rem;
                 font-weight: normal;
                 font-size: 16px;
                 color: #FFF;
-                
+                text-align: center;
                 & + p{
                     margin: 0 0 32px;
                 }

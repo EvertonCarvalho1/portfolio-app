@@ -69,7 +69,7 @@ export function Projects() {
 
     return (
         <Container>
-            <ArrowDropDown />
+            <ArrowDropDown className="ArrowDropDown" />
             <h1>Meus Projetos</h1>
             {
                 projectsData.map((item) => (
