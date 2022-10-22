@@ -63,7 +63,7 @@ export const Container = styled.div`
         .socialMedia{
             width: 100%;
             display: flex;
-            flex-direction: row;
+            flex-direction: row !important;
             align-items: center;
             justify-content: center;
             gap: 20px;

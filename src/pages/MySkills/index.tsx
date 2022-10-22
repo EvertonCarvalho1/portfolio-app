@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Aos from "aos";
 import WebIcon from '@mui/icons-material/Web';
 import ConstructionIcon from '@mui/icons-material/Construction';
@@ -8,11 +8,33 @@ import { Container } from "./styles";
 
 export function MySkills() {
 
+    const [state, setState] = useState<any>({
+        mobileView: false,
+        drawerOpen: false,
+    });
+
+
     useEffect(() => {
         Aos.init({
             duration: 3000,
             mirror: true
         });
+    }, []);
+
+    useEffect(() => {
+        const setResponsiveness = () => {
+            return window.innerWidth < 900
+                ? setState((prevState: any) => ({ ...prevState, mobileView: true }))
+                : setState((prevState: any) => ({ ...prevState, mobileView: false }));
+        };
+
+        setResponsiveness();
+
+        window.addEventListener("resize", () => setResponsiveness());
+
+        return () => {
+            window.removeEventListener("resize", () => setResponsiveness());
+        };
     }, []);
 
     return (
@@ -23,7 +45,7 @@ export function MySkills() {
 
             <div className="containerSkills">
                 <div
-                    data-aos="fade-up"
+                    data-aos={state.mobileView ? "fade-right" : "fade-up"}
                     data-aos-anchor-placement="top-bottom"
                     className="cardSkills"
                     data-aos-offset="300"
@@ -44,7 +66,7 @@ export function MySkills() {
                 </div>
 
                 <div
-                    data-aos="fade-down"
+                    data-aos={state.mobileView ? "fade-right" : "fade-down"}
                     data-aos-anchor-placement="top-bottom"
                     className="cardSkills"
                     data-aos-offset="300"
@@ -65,7 +87,7 @@ export function MySkills() {
                 </div>
 
                 <div
-                    data-aos="fade-up"
+                    data-aos={state.mobileView ? "fade-right" : "fade-up"}
                     data-aos-anchor-placement="top-bottom"
                     className="cardSkills"
                     data-aos-offset="300"

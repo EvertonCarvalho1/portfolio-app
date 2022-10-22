@@ -75,4 +75,33 @@ export const Container = styled.section`
         -moz-box-shadow: 15px 13px 13px 0px rgba(0,0,0,0.75);
         box-shadow: 15px 13px 13px 0px rgba(0,0,0,0.75);
     }
+
+    @media (max-width: 900px){
+       
+
+    .title{
+        h1{
+            font-size: 30px;
+            margin-bottom: 50px;
+        }
+    }
+
+    .containerSkills{
+        width: 100%;
+        max-width: 1156px;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+
+            h1{
+                font-size: 20px;
+                font-weight: 700;
+                color: #FFB400;
+                margin-bottom: 15px;
+            } 
+        }
+    }
 `;

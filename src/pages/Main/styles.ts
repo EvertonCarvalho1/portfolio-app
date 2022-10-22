@@ -140,7 +140,7 @@ export const Container = styled.div`
 
     .mySkills0{
         width: 100% ;
-        padding: 100px 0px;
+        padding: 50px;
         margin: 0 auto;
         background-color: #161617;
         display: flex;
