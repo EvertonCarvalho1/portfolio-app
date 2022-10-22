@@ -5,9 +5,6 @@ type Props = {
 }
 
 export const Container = styled.div<Props>`
-
-
-
         width: 100%;
         background: #0a0a0c;
         display: flex;
@@ -42,7 +39,6 @@ export const Container = styled.div<Props>`
         }
         .img1{
             margin-right: 40px;
-
             ${props => props.repoId === 2
         ?
         css`
@@ -70,16 +66,56 @@ export const Container = styled.div<Props>`
             display: flex;
             justify-content: flex-end;
             margin-top: 30px;
-           .img2{
-                width: 100px;
-                height: 50px;
-                background-color: red;
-            } 
-           .button{
-                width: 100px;
-                height: 50px;
-               
-                background-color: red; 
-            } 
         }
+
+        @media (max-width: 900px){
+                width: 100%;
+                background: #0a0a0c;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+
+                h1{
+                    text-align: center;
+                }
+
+                .article{
+                    p{
+                        font-size: 13px;
+                    }
+                }
+            .containerFooter{
+                display: flex;
+                justify-content:center;
+                align-items: center;
+                margin-top: 30px;
+            }
+
+            .img1{
+            margin-right: 0;
+            ${props => props.repoId === 2
+        ?
+        css`
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                img{
+                    width: 110px;
+                    height: 100%;
+                }
+            `
+        :
+        css`
+                img{
+                     width: 100%;
+                }
+            `
+    }
+           
+        }
+
+
+    }
 `;

@@ -102,6 +102,12 @@ export const Container = styled.section`
                 color: #FFB400;
                 margin-bottom: 15px;
             } 
+
+         
+            li{
+                font-size: 13px !important;
+            }
+      
         }
     }
 `;

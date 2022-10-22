@@ -60,6 +60,14 @@ export const Container = styled.div<Props>`
           }
         }
 
+
+        
+    @media (max-width: 900px){
+      .buttonSeeProjects{
+        font-size: 13px !important;
+      }
+    }
+
 `;
 
 

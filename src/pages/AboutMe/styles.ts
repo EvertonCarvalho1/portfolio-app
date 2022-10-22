@@ -82,6 +82,8 @@ export const Container = styled.div`
         .aboutMecontainer{
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
             padding: 10px;
         .imgContainer{
             width: 100%;
@@ -117,7 +119,7 @@ export const Container = styled.div`
                 margin-top: 15px;
                 line-height: 2.2rem;
                 font-weight: normal;
-                font-size: 16px;
+                font-size: 13px;
                 color: #FFF;
                 text-align: center;
                 & + p{
