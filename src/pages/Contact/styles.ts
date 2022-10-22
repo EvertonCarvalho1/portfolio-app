@@ -103,7 +103,34 @@ export const Container = styled.div<Props>`
         `}
     }
     }
- 
+
+    @media (max-width: 900px){
+        .title{
+            h1{
+                font-size: 30px;
+            }
+        } 
+
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+
+            textarea{
+                font-size: 13px !important;
+            }
+        label{
+            font-size: 13px
+        }
+
+        input[type=text], 
+        input[type=email]{
+            font-size: 13px;
+        }
+            
+        }
+    }
 `;
 
 export const ContainerButton = styled.div`
@@ -164,5 +191,12 @@ export const ContainerButton = styled.div`
           100% {
             transform: rotate(360deg);
           }
+        }
+
+
+        @media (max-width: 900px){
+            input{
+            font-size: 13px !important;
+            }
         }
 `;

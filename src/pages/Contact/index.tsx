@@ -50,7 +50,7 @@ const Contact: React.FC = () => {
             emailIsFilled={userEmail}
             nameIsFilled={userName}
             messageIsFilled={message}
-            className='contactAnchor'
+
         >
             <div className="title">
                 <h1>Fale comigo!</h1>

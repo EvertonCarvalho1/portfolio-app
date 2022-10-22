@@ -25,4 +25,10 @@ export const Container = styled.header`
     .projectsContainer{
         margin-bottom: 100px;
     }
+
+    @media (max-width: 900px){
+        >h1{
+        margin-bottom: 50px;
+    }
+    }
 `;

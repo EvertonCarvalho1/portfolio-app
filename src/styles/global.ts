@@ -18,6 +18,7 @@ body{
     .MuiDrawer-paper{
         background-color: #000;
         width: 100%;
+        border-bottom: 1px solid #FFB400;
 
         .drawerContent{
             .aNav{

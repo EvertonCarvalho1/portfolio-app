@@ -77,7 +77,7 @@ export function Main() {
                 </div>
 
                 <div
-                    className='contact'
+                    className='contact contactAnchor'
                     id="contact"
                 >
                     <ArrowDropDown className="ArrowDropDown" />
@@ -92,7 +92,6 @@ export function Main() {
                 >
                     <i className="fa fa-whatsapp whatsapp-icon"></i>
                 </a>
-
             </Container>
             <Footer />
         </>

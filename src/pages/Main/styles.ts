@@ -154,18 +154,14 @@ export const Container = styled.div`
     }
 
     .projects{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        padding: 100px 20px ;
-        background-color: #0f0f0f;
+        padding: 50px 20px ;
     }
 
     .contact{
         width: 100%;
         background-color: #161617;
         position: relative;
-        padding: 100px;
+        padding: 50px 20px;
  
         > svg{
             position: absolute; 
@@ -177,11 +173,8 @@ export const Container = styled.div`
         }
     }
 
-    .ArrowDropDown{
-        display: none;
+        .ArrowDropDown{
+            display: none;
+        }
     }
-
-    }
-
-
 `;

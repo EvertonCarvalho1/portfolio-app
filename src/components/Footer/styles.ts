@@ -47,4 +47,10 @@ export const Container = styled.header`
                 }
             }
         }  
+
+    @media (max-width: 900px){
+        h1{
+            font-size: 13px;
+        }
+    }
 `;
