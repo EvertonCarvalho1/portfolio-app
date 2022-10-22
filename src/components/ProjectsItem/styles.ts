@@ -84,6 +84,7 @@ export const Container = styled.div<Props>`
                 .article{
                     p{
                         font-size: 13px;
+                        text-align: center;
                     }
                 }
             .containerFooter{
