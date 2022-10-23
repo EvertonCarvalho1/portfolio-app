@@ -42,9 +42,6 @@ export const Container = styled.div`
             font-weight: normal;
             font-size: 16px;
             color: #FFF;
-            & + p{
-                margin: 0 0 32px;
-            }
         }
     }
       
@@ -122,9 +119,6 @@ export const Container = styled.div`
                 font-size: 13px;
                 color: #FFF;
                 text-align: center;
-                & + p{
-                    margin: 0 0 32px;
-                }
             }
         }
         

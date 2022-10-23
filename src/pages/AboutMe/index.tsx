@@ -17,8 +17,12 @@ export function AboutMe() {
                         Atualmente trabalho como desenvolvedor Front-end na Conecto e também sou estudante de Análise e Desenvolvimento de Sistemas.
                     </p>
 
+                    <p style={{ marginBottom: 15 }}>
+                        Adoro aprender coisas novas, trabalhar em equipe e resolver problemas.
+                    </p>
+
                     <p>
-                        Adoro aprender coisas novas, trabalhar em equipe e resolver problemas. Facilitar a vida das pessoas com o meu trabalho é o que me motiva.
+                        Facilitar a vida das pessoas com o meu trabalho é o que me motiva.
                     </p>
                 </div>
                 <SocialMedia />
