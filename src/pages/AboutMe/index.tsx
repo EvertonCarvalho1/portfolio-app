@@ -13,7 +13,7 @@ export function AboutMe() {
 
                 <div className="aboutMeDescription">
                     <h1>Sobre mim</h1>
-                    <p>
+                    <p style={{ marginBottom: 15 }}>
                         Atualmente trabalho como desenvolvedor Front-end na Conecto e também sou estudante de Análise e Desenvolvimento de Sistemas.
                     </p>
 
