@@ -4,6 +4,15 @@ export const Container = styled.div`
     position: relative;
     padding: 0 70px 0 20px;
 
+    > svg{
+            position: absolute; 
+            font-size: 200px;
+            color: black;
+            bottom: -215px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
 
     .containerHome{
         display: flex;
