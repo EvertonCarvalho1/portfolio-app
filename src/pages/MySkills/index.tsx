@@ -3,6 +3,7 @@ import Aos from "aos";
 import WebIcon from '@mui/icons-material/Web';
 import ConstructionIcon from '@mui/icons-material/Construction';
 import LibraryAddIcon from '@mui/icons-material/LibraryAdd';
+import CodeIcon from '@mui/icons-material/Code';
 
 import { Container } from "./styles";
 
@@ -48,7 +49,7 @@ export function MySkills() {
                     data-aos={state.mobileView ? "fade-right" : "fade-up"}
                     data-aos-anchor-placement="top-bottom"
                     className="cardSkills"
-                    data-aos-offset="300"
+                    data-aos-offset="200"
                     data-aos-duration="1000"
                 >
                     <div className="icon">
@@ -62,6 +63,7 @@ export function MySkills() {
                         <li>React Native</li>
                         <li>Typescript</li>
                         <li>Javascript</li>
+                        <li>Sass</li>
                     </ul>
                 </div>
 
@@ -69,7 +71,28 @@ export function MySkills() {
                     data-aos={state.mobileView ? "fade-right" : "fade-down"}
                     data-aos-anchor-placement="top-bottom"
                     className="cardSkills"
-                    data-aos-offset="300"
+                    data-aos-offset="200"
+                    data-aos-duration="1000"
+                >
+                    <div className="icon">
+                        <CodeIcon />
+                    </div>
+
+                    <h1>Back-End</h1>
+
+                    <ul>
+                        <li>NodeJS</li>
+                        <li>PostgreSQL</li>
+                        <li>SQLite</li>
+                        <li>PrismaORM</li>
+                    </ul>
+                </div>
+
+                <div
+                    data-aos={state.mobileView ? "fade-right" : "fade-down"}
+                    data-aos-anchor-placement="top-bottom"
+                    className="cardSkills"
+                    data-aos-offset="200"
                     data-aos-duration="1000"
                 >
                     <div className="icon">
@@ -83,6 +106,7 @@ export function MySkills() {
                         <li>GitHub</li>
                         <li>Visual Studio Code</li>
                         <li>Insomnia</li>
+                        <li>Beekeeper</li>
                     </ul>
                 </div>
 
@@ -90,7 +114,7 @@ export function MySkills() {
                     data-aos={state.mobileView ? "fade-right" : "fade-up"}
                     data-aos-anchor-placement="top-bottom"
                     className="cardSkills"
-                    data-aos-offset="300"
+                    data-aos-offset="240"
                     data-aos-duration="1000"
                 >
                     <div className="icon">
@@ -103,6 +127,7 @@ export function MySkills() {
                         <li>Jira</li>
                         <li>Trello</li>
                         <li>Swegger</li>
+                        <li>Figma</li>
                     </ul>
                 </div>
 

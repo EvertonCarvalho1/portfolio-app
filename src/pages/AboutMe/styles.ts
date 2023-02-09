@@ -12,21 +12,65 @@ export const Container = styled.div`
     .aboutMecontainer{
         display: flex;
         padding: 24px;
-        .imgContainer{
-            width: 326px;
-            height: 405px;
-            -webkit-box-shadow: 15px 13px 13px 0px rgba(0,0,0,0.75);
-            -moz-box-shadow: 15px 13px 13px 0px rgba(0,0,0,0.75);
-            box-shadow: 15px 13px 13px 0px rgba(0,0,0,0.75);
+
+
+        .imgContainer {
+        width: 800px;
+        height: 370px;
+        box-shadow: 16px 14px 20px #0000008c;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            padding: 2px;
+            width: 100%;
+            height: 100%;
             border-radius: 8px !important;
-            img{
-                width: 326px;
-                border-radius: 8px !important;
-                z-index: 99999;
-            }
+            z-index: 99999;
         }
-   
+    }
+    .imgContainer::before{
+        content: "";
+        background-image: conic-gradient(
+            #FFB400 20deg,
+            transparent 120deg
+        );
+        width: 150%;
+        height: 150%;
+        position: absolute;
+        animation: rotate 2s linear infinite;
+    }
+    .imgContainer::after{
+        width: 190px;
+        height: 190px;
+        background: #101010;
+        position: absolute;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFB400;
+        font-size: larger;
+        letter-spacing: 5px;
+        box-shadow: inset 20px 20px 20px #0000008c;
+    }
+    @keyframes rotate {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(-360deg);
+        }
+    }
+
+
     .aboutMeDescription{
+        height: auto;
+        width: 140%;
         margin-left: 30px;
         padding: 0 30px 0 0;
         h1{
@@ -82,23 +126,19 @@ export const Container = styled.div`
             justify-content: center;
             align-items: center;
             padding: 10px;
-        .imgContainer{
+
+
+            .imgContainer {
             width: 100%;
-            height: 100%;
-            max-width: 300px;
-            
-            -webkit-box-shadow: 15px 13px 13px 0px rgba(0,0,0,0.75);
-            -moz-box-shadow: 15px 13px 13px 0px rgba(0,0,0,0.75);
-            box-shadow: 15px 13px 13px 0px rgba(0,0,0,0.75);
+            max-width: 336px;
+            height: auto;
+
+        img{
+            padding: 3px 1.5px 3px 1.5px;
             border-radius: 8px !important;
-            img{
-                width: 100%;
-                height: 100%;
-                border-radius: 8px !important;
-                z-index: 99999;
-            }
+            z-index: 99999;
         }
-    
+    }
         .aboutMeDescription{
             width: 100%;
             padding: 10px 0;

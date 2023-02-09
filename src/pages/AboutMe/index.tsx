@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "./styles";
-import evertonImg from '../../assets/Everton.svg';
+import evertonImg from '../../assets/everton.png';
 import { SocialMedia } from "../../components/SocialMedia";
 
 export function AboutMe() {
@@ -14,11 +14,11 @@ export function AboutMe() {
                 <div className="aboutMeDescription">
                     <h1>Sobre mim</h1>
                     <p style={{ marginBottom: 15 }}>
-                        Atualmente trabalho como desenvolvedor Front-end na Conecto e também sou estudante de Análise e Desenvolvimento de Sistemas.
+                        Atualmente, atuo como desenvolvedor de front-end e tenho experiência em tecnologias como ReactJS, React Native, TypeScript e JavaScript.
                     </p>
 
                     <p style={{ marginBottom: 15 }}>
-                        Adoro aprender coisas novas, trabalhar em equipe e resolver problemas.
+                        Além disso, tenho conhecimento no desenvolvimento back-end utilizando NodeJS, PostgreSQL e SQLite.
                     </p>
 
                     <p>
@@ -30,3 +30,4 @@ export function AboutMe() {
         </Container>
     )
 }
+

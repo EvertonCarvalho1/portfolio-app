@@ -50,8 +50,8 @@ export function Main() {
                         data-aos='fade-right'
                         data-aos-anchor=".aboutMe0"
                         data-aos-easing="ease-in-sine"
-                        data-aos-offset="500"
-                        data-aos-duration="500"
+                        data-aos-offset="400"
+                        data-aos-duration="400"
                     >
                         <AboutMe />
                         <ArrowDropDown className="ArrowDropDown" />

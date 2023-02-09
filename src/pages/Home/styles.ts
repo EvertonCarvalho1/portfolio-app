@@ -2,33 +2,73 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     position: relative;
-    padding: 0 70px 0 20px;
 
-    > svg{
-            position: absolute; 
-            font-size: 200px;
-            color: black;
-            bottom: -215px;
-            left: 50%;
-            transform: translate(-50%, -50%);
+    .buttonSeeProjects{
+            margin-top: 10px;
+            width: 169px;
+            height: 48px;
+            border-radius:5px;
+            border: none;
+            background: #FFB400;
+            color: #000000;
+            letter-spacing: 0;
+            transition:  0.3s;
+            font-weight: 500;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            &:hover{
+                background: #ba8400;
+                color: #FFF; 
+            }
         }
 
+    > svg{
+        position: absolute; 
+        font-size: 200px;
+        color: black;
+        bottom: -215px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    video {
+        width: 110%;
+        height: 1000px;
+        object-fit: cover;
+    } 
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 99.6%;
+        background-color: rgba(0,0,0,.7);
+
+    }
 
     .containerHome{
+        margin-top: 80px;
+        padding: 0 70px 0 20px;
         display: flex;
-      
-        .containerText{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        align-items: center;
-        margin: 225px auto ;
-        text-align: center;
+        position: absolute;
         width: 100%;
-        max-width: 1156px;
-        height: 425px;
+        top: 0;
 
+        .containerText{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            align-items: center;
+            margin: 225px auto ;
+            text-align: center;
+            width: 100%;
+            max-width: 1156px;
+            height: 425px;
 
         .homeTextContainer{
         display: flex;
@@ -76,7 +116,11 @@ export const Container = styled.div`
 
     @media (max-width: 900px){
 
-        padding: 0 20px 0 20px;
+        video {
+            width: 110%;
+            height: 850px;
+            object-fit: cover;
+        } 
 
         .buttonSeeProjects{
             font-size: 13px !important;
@@ -85,7 +129,8 @@ export const Container = styled.div`
         .containerHome{
             display: flex;
             justify-content: center !important; 
-
+            padding: 0;
+            
             .socialMedia{
                 display: none;
             }
