@@ -7,26 +7,29 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import { Container } from "./styles";
 
 export function Footer() {
+
+    const date = new Date().getFullYear();
+
     return (
         <Container>
             <div className="socialMedia">
 
                 <div>
-                    <a href="https://github.com/EvertonCarvalho1" target={"_blank"}><GitHubIcon /></a>
+                    <a rel="noreferrer" href="https://github.com/EvertonCarvalho1" target={"_blank"}><GitHubIcon /></a>
                 </div>
 
                 <div>
-                    <a href="https://www.linkedin.com/in/everton-carvalho-9395a6137/" target={"_blank"}><LinkedInIcon /></a>
+                    <a rel="noreferrer" href="https://www.linkedin.com/in/everton-carvalho-9395a6137/" target={"_blank"}><LinkedInIcon /></a>
                 </div>
 
                 <div>
-                    <a href="https://www.instagram.com/http.everton_/" target={"_blank"}><InstagramIcon /></a>
+                    <a rel="noreferrer" href="https://www.instagram.com/http.everton_/" target={"_blank"}><InstagramIcon /></a>
                 </div>
 
             </div>
 
             <h1>
-                © Copyright 2022 - Everton Carvalho. <br />
+                {`© Copyright ${date} - Everton Carvalho.`} <br />
                 Todos os direitos reservados.
             </h1>
         </Container>

@@ -14,7 +14,7 @@ export function AboutMe() {
                 <div className="aboutMeDescription">
                     <h1>Sobre mim</h1>
                     <p style={{ marginBottom: 15 }}>
-                        Atualmente, atuo como desenvolvedor de front-end e tenho experiência em tecnologias como ReactJS, React Native, TypeScript e JavaScript.
+                        Atualmente, atuo como desenvolvedor front-end e tenho experiência em tecnologias como ReactJS, React Native, TypeScript e JavaScript.
                     </p>
 
                     <p style={{ marginBottom: 15 }}>

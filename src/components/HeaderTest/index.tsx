@@ -146,9 +146,10 @@ export default function HeaderTest() {
         const handleDrawerClose = () => {
             setState((prevState) => ({ ...prevState, drawerOpen: false }));
         }
-        return headersData.map((item) => {
+        return headersData.map((item, index) => {
             return (
                 <Link
+                    key={index}
                     {...{
                         className: item.className,
                         to: item.to,
@@ -161,7 +162,7 @@ export default function HeaderTest() {
                     }
                     }
                 >
-                    <MenuItem>  {item.label}</MenuItem>
+                    <MenuItem key={index}>  {item.label}</MenuItem>
 
                 </Link>
 
@@ -177,9 +178,10 @@ export default function HeaderTest() {
     );
 
     const getMenuButtons = () => {
-        return headersData.map((item) => {
+        return headersData.map((item, index) => {
             return (
                 <Link
+                    key={index}
                     {...{
                         className: item.className,
                         to: item.to,
