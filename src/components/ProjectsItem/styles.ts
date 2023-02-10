@@ -48,14 +48,14 @@ export const Container = styled.div<Props>`
                 justify-content: center;
                 img{
                     width: 110px;
-                    height: 100%;
+                    height: 215px;
                 }
             `
         :
         css`
             img{
                 width: 280px;
-                height: 100%;
+                height: 215px;
             }
         `
     }
@@ -98,19 +98,22 @@ export const Container = styled.div<Props>`
             margin-right: 0;
             ${props => props.repoId === 2
         ?
-        css`
+        css`    
                 width: 100%;
                 display: flex;
                 justify-content: center;
                 img{
-                    width: 110px;
-                    height: 100%;
+                    width: 100%;
+                    max-width: 110px;
+                    height: auto;
                 }
             `
         :
         css`
                 img{
-                     width: 100%;
+                    width: 100%;
+                    max-width: 215px;
+                    height: auto;
                 }
             `
     }

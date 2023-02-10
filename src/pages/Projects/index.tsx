@@ -20,42 +20,43 @@ export function Projects() {
             id: 1,
             repoImage: dtmoney,
             repoName: 'Dtmoney',
-            repoDescription: 'Projeto de controle financeiro construído nas aulas do Chapter II da trilha de ReactJS do Ignite da Rocketseat.',
+            repoDescription: 'Projeto de controle financeiro desenvolvido com o conteúdo estudado nas aulas do Chapter II da trilha de ReactJS do Bootcamp Ignite da Rocketseat.',
             repoLink: 'https://github.com/EvertonCarvalho1/dtmoney'
         },
         {
             id: 2,
             repoImage: gameplay,
             repoName: 'Gameplay-nlw',
-            repoDescription: 'Projeto desenvolvido na missão React Native no NLW #06',
+            repoDescription: 'Aplicativo desenvolvido com React Native, lhe ajuda a conectar-se e organizar o momento de diversão e jogar com os amigos. Crie grupos para jogar seus games favoritos com seus amigos com esse App que possui autenticação com Discord.',
             repoLink: 'https://github.com/EvertonCarvalho1/gameplay-nlw'
         },
         {
             id: 3,
             repoImage: letmeask,
             repoName: 'Letmeask-nlw',
-            repoDescription: 'Letmeask é perfeito para criadores de conteúdos poderem criar salas de Q&A com o seu público, de uma forma muito organizada e democrática.',
+            repoDescription: 'Projeto desenvolvido com ReactJS é perfeito para criadores de conteúdos poderem criar salas de Q&A com o seu público, de uma forma muito organizada e democrática.',
             repoLink: 'https://github.com/EvertonCarvalho1/letmeask-nlw'
         },
         {
             id: 4,
             repoImage: gobarber,
             repoName: 'Gobarber-web',
-            repoDescription: 'Plataforma web do gobarber, construído utilizando React.js e Typescript.',
+            repoDescription: `Projeto desenvolvido durante o bootcamp GoStack 11 da Rocketseat.
+            É um sistema Web que foi feito com ReactJS e tem por objetivo criar uma ferramenta de gerenciamento de agenda de barbeiros, facilitando a visualização de horários marcados e livres, filtrando por datas.`,
             repoLink: 'https://github.com/EvertonCarvalho1/gobarber-web'
         },
         {
             id: 5,
             repoImage: githubExplorer,
             repoName: 'Github-explorer',
-            repoDescription: 'Projeto desenvolvido nas aulas do Bootcamp GoStack 11 da Rocketseat.',
+            repoDescription: 'Github Explorer é uma aplicação em ReactJs onde é possível pesquisar por um usuário do Github e visualizar algumas informações de seu perfil, assim como seus repositórios.',
             repoLink: 'https://github.com/EvertonCarvalho1/github-explorer'
         },
         {
             id: 6,
             repoImage: devNews,
             repoName: 'Devnews-web',
-            repoDescription: 'Esta aplicação fornece tudo o que é necessário para cadastrar e gerenciar notícias.',
+            repoDescription: 'Esta é uma aplicação feita em ReactJs onde ela fornece tudo o que é necessário para cadastrar e gerenciar notícias.',
             repoLink: 'https://github.com/EvertonCarvalho1/devnews-web'
         },
     ]

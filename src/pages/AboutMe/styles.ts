@@ -59,9 +59,6 @@ export const Container = styled.div`
         box-shadow: inset 20px 20px 20px #0000008c;
     }
     @keyframes rotate {
-        0%{
-            transform: rotate(0deg);
-        }
         100%{
             transform: rotate(-360deg);
         }
