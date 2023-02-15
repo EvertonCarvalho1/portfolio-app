@@ -15,7 +15,7 @@ export const Container = styled.div`
 
 
         .imgContainer {
-        width: 800px;
+        width: 900px;
         height: 370px;
         box-shadow: 16px 14px 20px #0000008c;
         border-radius: 10px;
