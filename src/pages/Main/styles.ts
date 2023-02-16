@@ -10,6 +10,14 @@ export const Container = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
+        > svg{
+            position: absolute; 
+            font-size: 200px;
+            color: #0f0f0f;
+            bottom: -1068px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
     }
     
     .aboutMe{
@@ -18,14 +26,6 @@ export const Container = styled.div`
         max-width: 1156px;
         padding: 0 20px;
 
-        > svg{
-            position: absolute; 
-            font-size: 200px;
-            color: #0f0f0f;
-            bottom: -395px;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
     }
 
     .mySkills0{

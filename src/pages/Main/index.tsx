@@ -51,11 +51,11 @@ export function Main() {
                         data-aos-anchor=".aboutMe0"
                         data-aos-easing="ease-in-sine"
                         data-aos-offset="400"
-                        data-aos-duration="400"
+                        data-aos-duration="500"
                     >
                         <AboutMe />
-                        <ArrowDropDown className="ArrowDropDown" />
                     </div>
+                    <ArrowDropDown className="ArrowDropDown" />
                 </div>
 
                 <div
