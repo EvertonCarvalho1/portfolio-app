@@ -3,7 +3,6 @@ import ArrowDropDown from '@mui/icons-material/ArrowDropDown';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
-import { Header } from "../../components/Header";
 import { AboutMe } from "../AboutMe";
 import { Home } from "../Home";
 import { MySkills } from "../MySkills";
@@ -13,7 +12,7 @@ import { Container } from "./styles";
 import Contact from "../Contact";
 import { Toaster } from "react-hot-toast";
 import { Footer } from "../../components/Footer";
-import HeaderTest from "../../components/HeaderTest";
+import ResponsiveHeader from "../../components/ResponsiveHeader";
 
 export function Main() {
     useEffect(() => {
@@ -25,7 +24,7 @@ export function Main() {
 
     return (
         <>
-            <HeaderTest />
+            <ResponsiveHeader />
 
             <Container>
                 <div><Toaster /></div>

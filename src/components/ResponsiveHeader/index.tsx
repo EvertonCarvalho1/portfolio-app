@@ -51,7 +51,7 @@ const headersData = [
 
 ];
 
-export default function HeaderTest() {
+export default function ResponsiveHeader() {
 
     const [state, setState] = useState({
         mobileView: false,
